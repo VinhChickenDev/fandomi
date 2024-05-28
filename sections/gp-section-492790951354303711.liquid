@@ -1,0 +1,951 @@
+
+  
+  
+      <style>
+        @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlEw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlEw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff) format('woff');
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
+  <style>
+    .gps-492790951354303711 .pointer-events-auto{pointer-events:auto}.gps-492790951354303711 .relative{position:relative}.gps-492790951354303711 .mx-auto{margin-left:auto;margin-right:auto}.gps-492790951354303711 .mb-0{margin-bottom:0}.gps-492790951354303711 .\!inline{display:inline!important}.gps-492790951354303711 .flex{display:flex}.gps-492790951354303711 .inline-flex{display:inline-flex}.gps-492790951354303711 .grid{display:grid}.gps-492790951354303711 .h-6{height:24px}.gps-492790951354303711 .h-full{height:100%}.gps-492790951354303711 .w-6{width:24px}.gps-492790951354303711 .w-full{width:100%}.gps-492790951354303711 .max-w-full{max-width:100%}.gps-492790951354303711 .flex-col{flex-direction:column}.gps-492790951354303711 .items-center{align-items:center}.gps-492790951354303711 .justify-center{justify-content:center}.gps-492790951354303711 .gap-y-0{row-gap:0}.gps-492790951354303711 .overflow-hidden{overflow:hidden}.gps-492790951354303711 .leading-\[0\]{line-height:0}.gps-492790951354303711 .text-g-bg-3{color:var(--g-c-bg-3)}.gps-492790951354303711 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951354303711 .duration-200{transition-duration:.2s}.gps-492790951354303711 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951354303711 .\[\&\>svg\]\:h-auto>svg{height:auto}.gps-492790951354303711 .\[\&\>svg\]\:w-full>svg{width:100%}.gps-492790951354303711 .\[\&_\*\]\:max-w-full *{max-width:100%}.gps-492790951354303711 .\[\&_p\]\:inline p{display:inline}.gps-492790951354303711 .\[\&_p\]\:after\:whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-492790951354303711 .\[\&_p\]\:after\:content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}
+  </style>
+  
+      
+      
+            <section
+              class="mx-auto max-w-full"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="ruFimeY3OS"
+        style="--border:;--rounded:;--pt:var(--g-s-3xl);--pl:15px;--pb:var(--g-s-4xl);--pr:15px;--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:var(--g-c-bg-3);--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ruFimeY3OS mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="Oz7IKFG_ED relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="vz-LylaQgO"
+        style="--border:;--rounded:;--ml:auto;--mr:auto;--pt:var(--g-s-2xl);--pl:var(--g-s-l);--pb:var(--g-s-3xl);--pr:var(--g-s-l);--pt-tablet:var(--g-s-2xl);--pl-tablet:0px;--pb-tablet:var(--g-s-3xl);--pr-tablet:0px;--cg:30px;--cg-tablet:28px;--gtc:minmax(0, 1fr);--gtc-mobile:minmax(0, 1fr);--w:750px;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="vz-LylaQgO mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:center;--o:0"
+      class="sdhI-K0DR8 relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gZQv-GH_Tc ">
+      
+    <div
+      parentTag="Col"
+        class="gZQv-GH_Tc "
+        style="--tt:default;--ta:center"
+      >
+      <div class="flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:500;--ls:normal;--lh:130%;--size:40px;--size-tablet:40px;--size-mobile:35px;word-break:break-word"
+        >
+        <p>Order a high-quality rose bear!</p>
+        </h2>
+      </div>
+    </div>
+      </div>
+    <div
+      parentTag="Col"
+        class="g1o0TxoxEU "
+        style="--tt:default;--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        <p>The production process described includes high-quality resin flowers that are sold on a custom basis and decorated.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="gJj4W9uwm4"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 3fr) minmax(0, 6fr) minmax(0, 3fr);--gtc-tablet:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gJj4W9uwm4 mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-tablet:1;--o-mobile:1"
+      class="gNcjFXF7M_ relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="jFRnY-PE-x"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--pb:var(--g-s-xl);--mt-tablet:var(--g-s-2xl);--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#8E8E8E;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="jFRnY-PE-x mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="_PsyvdoVi4 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gyxsZLvPXK "
+        style="--tt:default;--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-bg-3 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        <p>Cheap Rose Bear</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="dWA2ZZT13_"
+        style="--b:solid;--bc:#EEEEEE;--bw:1px 1px 1px 1px;--rounded:;--pt:var(--g-s-2xl);--pl:var(--g-s-l);--pb:var(--g-s-2xl);--pr:var(--g-s-l);--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="dWA2ZZT13_ mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="kp4k-kU7L9 relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="4daTDYrjnD"
+        style="--border:;--rounded:;--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="4daTDYrjnD mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="aX4XS0x6XD relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] SkjRVSbHVW"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#575757;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="UqHxPDmWJ2 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gxJtsyLYjQ "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Poor-Quality Gluing</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="gVtqTK5OsK "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Roses glued unevenly. Visible foam and glue.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="1nF3VCkEyv"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="1nF3VCkEyv mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="n7sRjCrzvt relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] vV8xGHgT1k"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#575757;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="BOBgU7krPS relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gJo1nEONNX "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Number Of Roses Used</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="g1v97w4jg7 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Bear is made from 200 roses.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="ilaacV4dQE"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="ilaacV4dQE mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="Buh-1RK-pA relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] snyNBMahuj"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#575757;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="N3sQmL4Dvl relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="g1rxAqVs9J "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Poor-Quality Material</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="g7aU7OJ0ou "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Wrinkle-free and inexpensive roses</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="lgBEtdINB1"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="lgBEtdINB1 mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="0gNvbDhB9z relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] hQ1-eknm-m"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#575757;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="vPZDiudE34 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gyB4jwig4M "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>No Warranty</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="gKp9ideLXF "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Seller offers no warranty for quality and delivery.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-tablet:0;--o-mobile:0"
+      class="g3N6uYbGo6 relative flex flex-col"
+    >
+      <div
+    
+    role="presentation"
+    class="group/image kQ6Dx_5EAa"
+    style="--border:;--borderImg:;--boxShadowBtnImg:;--hasBoxShadowImg:;--rounded:;--roundedImg:;--ta:left"
+    >
+      <div
+        class="pointer-events-auto h-full"
+        
+        class="h-full w-full"
+        style="border-radius:inherit;--ta:left"
+      >
+        <img loading="lazy"
+    quality="70" title="Image Title"
+    draggable="false"
+    class="!inline h-full max-w-full flex gp_lazyload"
+    data-src="https://ucarecdn.com/ae595f69-64a6-4de7-a163-ef84cc6c571e/-/format/auto/" data-srcset="https://ucarecdn.com/ae595f69-64a6-4de7-a163-ef84cc6c571e/-/format/auto/ 768w,https://ucarecdn.com/ae595f69-64a6-4de7-a163-ef84cc6c571e/-/format/auto/ 1024w,https://ucarecdn.com/ae595f69-64a6-4de7-a163-ef84cc6c571e/-/format/auto/ 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+Pr1638ACaED3/nOThIAAAAASUVORK5CYII=" width="1140" height="1276" alt="Alt Image" priority
+    sizes="100vw"
+    style="--aspect:1140/1276;--aspect-tablet:1140/1276;--aspect-mobile:1140/1276;--objf:cover;--w:100%;--w-tablet:100%;--w-mobile:100%;--h:auto;--h-tablet:auto;--h-mobile:auto;border-radius:inherit"
+  />
+      </div>
+  </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center;--o-tablet:2;--o-mobile:2"
+      class="g0x8EYGO1A relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="GTVQEdoKok"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--pb:var(--g-s-xl);--mt-tablet:var(--g-s-2xl);--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#D2041D;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="GTVQEdoKok mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="l_Xyh0n7f5 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gA7taW3414 "
+        style="--tt:default;--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-bg-3 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        <p>Rose Bear By Gem</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="5AT_O1WShE"
+        style="--b:solid;--bc:#D2041D;--bw:1px 1px 1px 1px;--rounded:;--pt:var(--g-s-2xl);--pl:var(--g-s-l);--pb:var(--g-s-2xl);--pr:var(--g-s-l);--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="5AT_O1WShE mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="E16WlrIZyG relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="1CroXnkDZm"
+        style="--border:;--rounded:;--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="1CroXnkDZm mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="cgMvfydnaw relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] kJ1nG5MEh9"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#52C41A;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="FztapWSMLt relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="g6ETyOk6UL "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>High-Quality Gluing</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="gGWM_cjpoz "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>All bears are handmade in Europe.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="hPIRFgIaHV"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="hPIRFgIaHV mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="6Tk5Qu9fQJ relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] 9mFP67qbPj"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#52C41A;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="3qgbUD2ncw relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gd0vEGSwRB "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Number Of Roses Used</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="g7sZzohOpY "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Bear is made from 500 roses.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="rLDwBULoqf"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="rLDwBULoqf mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="h42SUlpRTH relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] Ka8p9Mosrg"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#52C41A;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="hjC4uVtfFP relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gYkQ0ftGJ9 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>High-Quality Material</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="ghltsQr6G1 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>We sort and prepare all roses manually.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="9rjJ0x-SAH"
+        style="--border:;--rounded:;--pt:var(--g-s-xl);--cg:12px;--cg-tablet:10px;--gtc:auto minmax(0, 1fr);--gtc-mobile:auto minmax(0, 1fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="9rjJ0x-SAH mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:flex-start;--o:0"
+      class="Qi69W-Ayzj relative flex flex-col"
+    >
+      <div
+      
+      style="--align:;--bgColor:;--border:;--color:;--iconBorder:;--iconBorderSample:;--iconRotate:;--iconRounded:;--iconRoundedSample:;--iconSpacing:;--iconWidth:;--rounded:;--spin:;--ta:left"
+      class="leading-[0] v_LR9ZPJjN"
+    >
+      <div class="inline-flex overflow-hidden"
+      style="--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#52C41A;--t:rotate(0deg);--w:20px;--h:20px;--minw:20px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">
+              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:flex-start"
+      class="KJR3RqI2Xk relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gC8_OWO__f "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:600;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Money-Back Guarantee</p>
+        </div>
+      </div>
+    </div>
+    <div
+      parentTag="Col"
+        class="gMHGXQZ5iW "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-s)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Refund within 14 days if you are not satisfied.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+{% schema %}
+  {
+    
+    "name": "Section 6",
+    "tag": "section",
+    "class": "gps-492790951354303711 gps gpsi",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Section design by GemPages. [Click here to start design](https://builder.gempages.net/instant/hyperlink/edit?type=section&section_id=492790951354303711&template_id=492790951119422687)"
+      }
+    ],
+    "blocks": [{"type": "@app"}]
+  }
+{% endschema %}

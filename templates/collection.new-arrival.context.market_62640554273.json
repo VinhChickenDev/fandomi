@@ -1,0 +1,52 @@
+{
+  "parent": "collection.new-arrival.json",
+  "context": {
+    "market": "thế-giới"
+  },
+  "sections": {
+    "02d99a68-9fcd-4ac3-9163-2b081ae56138": {
+      "type": "featured-collection",
+      "disabled": false,
+      "settings": {
+        "title": "Personalized Gifts Recommended For You",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "header-5232a5639b242ca15b78b8adaf73d969": null,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "header-46c33cce1a0cd61d71b8ea01cad4522d": null,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "header-27a15ee970b9902226d18376998eb136": null,
+        "padding_top": 20,
+        "padding_bottom": 0
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "banner": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  },
+  "order": [
+    "banner",
+    "02d99a68-9fcd-4ac3-9163-2b081ae56138",
+    "product-grid"
+  ]
+}

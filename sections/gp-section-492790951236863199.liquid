@@ -1,0 +1,700 @@
+
+  
+  
+      <style>
+        @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlEw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlEw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff) format('woff');
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
+  <style>
+    .gps-492790951236863199 .-rotate-90,.gps-492790951236863199 .rotate-180,.gps-492790951236863199 .rotate-90{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1}.gps-492790951236863199 .relative{position:relative}.gps-492790951236863199 .mx-auto{margin-left:auto;margin-right:auto}.gps-492790951236863199 .mb-0{margin-bottom:0}.gps-492790951236863199 .flex{display:flex}.gps-492790951236863199 .inline-flex{display:inline-flex}.gps-492790951236863199 .grid{display:grid}.gps-492790951236863199 .hidden{display:none}.gps-492790951236863199 .w-full{width:100%}.gps-492790951236863199 .max-w-full{max-width:100%}.gps-492790951236863199 .-rotate-90{--tw-rotate:-90deg}.gps-492790951236863199 .-rotate-90,.gps-492790951236863199 .rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-492790951236863199 .rotate-180{--tw-rotate:180deg}.gps-492790951236863199 .rotate-90{--tw-rotate:90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.gps-492790951236863199 .cursor-pointer{cursor:pointer}.gps-492790951236863199 .flex-col{flex-direction:column}.gps-492790951236863199 .items-center{align-items:center}.gps-492790951236863199 .justify-center{justify-content:center}.gps-492790951236863199 .gap-y-0{row-gap:0}.gps-492790951236863199 .overflow-hidden{overflow:hidden}.gps-492790951236863199 .overflow-clip{overflow:clip}.gps-492790951236863199 .border{border-width:1px}.gps-492790951236863199 .text-g-text-1{color:var(--g-c-text-1)}.gps-492790951236863199 .transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951236863199 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951236863199 .duration-200{transition-duration:.2s}.gps-492790951236863199 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951236863199 .\[\&\>svg\]\:h-auto>svg{height:auto}.gps-492790951236863199 .\[\&\>svg\]\:w-full>svg{width:100%}.gps-492790951236863199 .\[\&_\*\]\:max-w-full *{max-width:100%}.gps-492790951236863199 .\[\&_p\]\:inline p{display:inline}.gps-492790951236863199 .\[\&_p\]\:after\:whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-492790951236863199 .\[\&_p\]\:after\:content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}
+  </style>
+  
+      
+      
+            <section
+              class="mx-auto max-w-full"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="7f1ONngnXD"
+        style="--border:;--rounded:;--pl:15px;--pb:var(--g-s-4xl);--pr:15px;--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FBFBFB;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="7f1ONngnXD mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="4cKCd7ab6l relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="7sRUHBtfC6"
+        style="--border:;--rounded:;--ml:auto;--mr:auto;--cg:30px;--gtc:minmax(0, 24fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="7sRUHBtfC6 mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="uEaL3jETvd relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gHhoH-86km ">
+      
+    <div
+      parentTag="Col"
+        class="gHhoH-86km "
+        style="--tt:default;--ta:center"
+      >
+      <div class="flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:500;--ls:normal;--lh:130%;--size:40px;--size-tablet:40px;--size-mobile:35px;word-break:break-word"
+        >
+        <p>Frequently asked questions</p>
+        </h2>
+      </div>
+    </div>
+      </div>
+    <div
+      parentTag="Col"
+        class="gzwJFhHbx1 "
+        style="--tt:default;--ta:center;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--pt:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:center">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        <p>Have questions? We’re here to help</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="RWxRWwVF1E"
+        style="--border:;--rounded:;--ml:auto;--mr:auto;--pt:var(--g-s-l);--pl:0px;--pr:0px;--cg:30px;--gtc:minmax(0, 24fr);--w:800px;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="RWxRWwVF1E mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="zTT4Bc_Fp8 relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)" class="gGDKHrsNEw ">
+      
+    <gp-accordion
+     uid="gGDKHrsNEw"
+      class="flex w-full flex-col "
+      style="--gg:auto"
+      gp-data='{"setting":{"iconSvg":"plus","isIconPlus":true,"activeKey":"0","expanded":false,"expandItem":true,"iconPosition":"right","iconGlobalSize":{"desktop":{"gap":"16px","height":"16px","width":"16px"}},"layoutHeader":"text-only","expandedMode":"single","configIconSize":16,"parentUid":"gGDKHrsNEw","childListNumber":["-1"]},"styles":{"bgColor":{"normal":"transparent"},"color":{"active":"#575757","hover":"#575757","normal":"#B4B4B4"},"headerBorder":{"normal":{"border":"none","borderLabel":"None","borderType":"none","color":"transparent","isCustom":false,"width":"0px 0px 0px 0px"}},"fullWidth":{"desktop":true},"width":{"desktop":"800px"},"itemHeaderSpacing":{"custom":{"desktop":{"horizontal":"0px","vertical":"32px"},"mobile":{"horizontal":"0px","vertical":"28px"}}},"textColor":{"active":"#242424","normal":"#242424"},"iconColor":{"active":"#121212","hover":"#121212","normal":"#121212"},"contentSizePadding":{"desktop":{"gap":"auto","padding":{"bottom":"0px","left":"0px","right":"0px","top":"0px","type":"custom"}},"mobile":{"padding":{"bottom":"0px","left":"0px","right":"0px","top":"0px","type":"custom"}},"tablet":{"padding":{"bottom":"0px","left":"0px","right":"0px","top":"0px","type":"custom"}}},"headerContentPadding":{"desktop":{"padding":{"bottom":"32px","left":"0px","right":"0px","top":"32px","type":"custom"}},"mobile":{"padding":{"bottom":"28px","left":"0px","right":"0px","top":"28px","type":"custom"}},"tablet":{"padding":{"bottom":"32px","left":"0px","right":"0px","top":"32px","type":"custom"}}},"widthHeightSize":{"desktop":{"width":"100%"},"mobile":{"width":"100%"},"tablet":{"width":"100%"}}},"uid":"gGDKHrsNEw"}'
+    >
+    <div class="hidden rotate-90 -rotate-90 rotate-180"></div>
+    <div
+                class="flex"
+                style="--jc:flex-start"
+              >
+                
+  <div class="overflow-clip" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bw:0px 0px 1px 0px;--bc:#E0E0E0">
+    <div
+      data-index="0"
+      class="gGDKHrsNEw gp-accordion-item overflow-hidden"
+    >
+      <div
+        aria-hidden
+        data-index="0"
+        class="gGDKHrsNEw gp-accordion-item-gGDKHrsNEw-0 flex items-center gp-accordion-item_header cursor-pointer"
+        style="--pl:0px;--pr:0px;--pt:32px;--pb:32px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:32px;--pb-tablet:32px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:28px;--pb-mobile:28px;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:transparent;--c:#242424;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent"
+      >
+       <style class="accordion-style">.gp-accordion-item-gGDKHrsNEw-0:hover { 
+              .gp-collapsible-icon { 
+                  color: #575757 
+              }
+
+              .gp-icon { 
+                  color: #121212 
+              }
+          }</style>
+        <div class="inline-flex">
+        <span
+            style="--hvr-c:#575757;--c:#B4B4B4;width:16px;height:16px"
+            data-index="0"
+            class="gGDKHrsNEw gp-accordion-item_icon gp-collapsible-icon rotate-90 inline-flex items-center justify-center overflow-hidden transition-all duration-200 [&>svg]:h-auto [&>svg]:w-full"
+          ><svg fill='currentColor' width='16' height='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg></span>
+          
+        </div>
+      <div class="flex items-center w-full" style="--gg:16px">
+        
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <span
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] overflow-hidden"
+          style="--w:100%;--ff:var(--g-font-Poppins, Poppins);--weight:600;--lh:130%;--size:19px;--size-mobile:17px;word-break:break-word"
+        >
+        What are rose bears?
+        </span>
+      </div>
+    </div>
+        
+      </div>
+      </div>
+      <div
+        uid="gRXIW63sLN"
+        data-index="0"
+        class="gGDKHrsNEw gp-accordion-item_body hidden"
+        style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:0px;--pb-tablet:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px"
+      >
+        <div
+      label="Block" tag="Col" type="component"
+      style=""
+      class="gJ6gE9VG0I relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gO-F8Izsq1 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:-16px;--mb:var(--g-s-2xl);--mt-mobile:-14px;--mb-mobile:var(--g-s-2xl)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-text-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>A Styrofoam Rose Teddy Bear that is covered in faux roses making a beautiful and unique gift for any occasion . Many choices of colours and styles available, meaning finding the perfect bear is only a few clicks away.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+              </div>
+            <div
+                class="flex"
+                style="--jc:flex-start"
+              >
+                
+  <div class="overflow-clip" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bw:0px 0px 1px 0px;--bc:#E0E0E0">
+    <div
+      data-index="1"
+      class="gGDKHrsNEw gp-accordion-item overflow-hidden"
+    >
+      <div
+        aria-hidden
+        data-index="1"
+        class="gGDKHrsNEw gp-accordion-item-gGDKHrsNEw-1 flex items-center gp-accordion-item_header cursor-pointer"
+        style="--pl:0px;--pr:0px;--pt:32px;--pb:32px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:32px;--pb-tablet:32px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:28px;--pb-mobile:28px;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:transparent;--c:#242424;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent"
+      >
+       <style class="accordion-style">.gp-accordion-item-gGDKHrsNEw-1:hover { 
+              .gp-collapsible-icon { 
+                  color: #575757 
+              }
+
+              .gp-icon { 
+                  color: #121212 
+              }
+          }</style>
+        <div class="inline-flex">
+        <span
+            style="--hvr-c:#575757;--c:#B4B4B4;width:16px;height:16px"
+            data-index="1"
+            class="gGDKHrsNEw gp-accordion-item_icon gp-collapsible-icon rotate-90 inline-flex items-center justify-center overflow-hidden transition-all duration-200 [&>svg]:h-auto [&>svg]:w-full"
+          ><svg fill='currentColor' width='16' height='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg></span>
+          
+        </div>
+      <div class="flex items-center w-full" style="--gg:16px">
+        
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <span
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] overflow-hidden"
+          style="--w:100%;--ff:var(--g-font-Poppins, Poppins);--weight:600;--lh:130%;--size:19px;--size-mobile:17px;word-break:break-word"
+        >
+        Do the rose bears come in a gift box?
+        </span>
+      </div>
+    </div>
+        
+      </div>
+      </div>
+      <div
+        uid="gm43TNhdyq"
+        data-index="1"
+        class="gGDKHrsNEw gp-accordion-item_body hidden"
+        style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:0px;--pb-tablet:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px"
+      >
+        <div
+      label="Block" tag="Col" type="component"
+      style=""
+      class="gLurQKjuop relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gMqXXB-1Ua "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:-16px;--mb:var(--g-s-2xl);--mt-mobile:-14px;--mb-mobile:var(--g-s-2xl)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-text-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>All our Rose Bears are shipped in luxury gift boxes, completely free of charge.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+              </div>
+            <div
+                class="flex"
+                style="--jc:flex-start"
+              >
+                
+  <div class="overflow-clip" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bw:0px 0px 1px 0px;--bc:#E0E0E0">
+    <div
+      data-index="2"
+      class="gGDKHrsNEw gp-accordion-item overflow-hidden"
+    >
+      <div
+        aria-hidden
+        data-index="2"
+        class="gGDKHrsNEw gp-accordion-item-gGDKHrsNEw-2 flex items-center gp-accordion-item_header cursor-pointer"
+        style="--pl:0px;--pr:0px;--pt:32px;--pb:32px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:32px;--pb-tablet:32px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:28px;--pb-mobile:28px;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:transparent;--c:#242424;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent"
+      >
+       <style class="accordion-style">.gp-accordion-item-gGDKHrsNEw-2:hover { 
+              .gp-collapsible-icon { 
+                  color: #575757 
+              }
+
+              .gp-icon { 
+                  color: #121212 
+              }
+          }</style>
+        <div class="inline-flex">
+        <span
+            style="--hvr-c:#575757;--c:#B4B4B4;width:16px;height:16px"
+            data-index="2"
+            class="gGDKHrsNEw gp-accordion-item_icon gp-collapsible-icon rotate-90 inline-flex items-center justify-center overflow-hidden transition-all duration-200 [&>svg]:h-auto [&>svg]:w-full"
+          ><svg fill='currentColor' width='16' height='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg></span>
+          
+        </div>
+      <div class="flex items-center w-full" style="--gg:16px">
+        
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <span
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] overflow-hidden"
+          style="--w:100%;--ff:var(--g-font-Poppins, Poppins);--weight:600;--lh:130%;--size:19px;--size-mobile:17px;word-break:break-word"
+        >
+        What are preserved flowers box?
+        </span>
+      </div>
+    </div>
+        
+      </div>
+      </div>
+      <div
+        uid="gWKpsbTrv6"
+        data-index="2"
+        class="gGDKHrsNEw gp-accordion-item_body hidden"
+        style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:0px;--pb-tablet:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px"
+      >
+        <div
+      label="Block" tag="Col" type="component"
+      style=""
+      class="gQEclKnGCz relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gqFm8ptvMr "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:-16px;--mb:var(--g-s-2xl);--mt-mobile:-14px;--mb-mobile:var(--g-s-2xl)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-text-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Preserved flowers are real fresh roses that have been preserved with our unique scientific method. They always still appear fresh and smell incredible. Our preserved flower boxes can last up-to 3 years.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+              </div>
+            <div
+                class="flex"
+                style="--jc:flex-start"
+              >
+                
+  <div class="overflow-clip" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bw:0px 0px 1px 0px;--bc:#E0E0E0">
+    <div
+      data-index="3"
+      class="gGDKHrsNEw gp-accordion-item overflow-hidden"
+    >
+      <div
+        aria-hidden
+        data-index="3"
+        class="gGDKHrsNEw gp-accordion-item-gGDKHrsNEw-3 flex items-center gp-accordion-item_header cursor-pointer"
+        style="--pl:0px;--pr:0px;--pt:32px;--pb:32px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:32px;--pb-tablet:32px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:28px;--pb-mobile:28px;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:transparent;--c:#242424;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent"
+      >
+       <style class="accordion-style">.gp-accordion-item-gGDKHrsNEw-3:hover { 
+              .gp-collapsible-icon { 
+                  color: #575757 
+              }
+
+              .gp-icon { 
+                  color: #121212 
+              }
+          }</style>
+        <div class="inline-flex">
+        <span
+            style="--hvr-c:#575757;--c:#B4B4B4;width:16px;height:16px"
+            data-index="3"
+            class="gGDKHrsNEw gp-accordion-item_icon gp-collapsible-icon rotate-90 inline-flex items-center justify-center overflow-hidden transition-all duration-200 [&>svg]:h-auto [&>svg]:w-full"
+          ><svg fill='currentColor' width='16' height='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg></span>
+          
+        </div>
+      <div class="flex items-center w-full" style="--gg:16px">
+        
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <span
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] overflow-hidden"
+          style="--w:100%;--ff:var(--g-font-Poppins, Poppins);--weight:600;--lh:130%;--size:19px;--size-mobile:17px;word-break:break-word"
+        >
+        How much is delivery?
+        </span>
+      </div>
+    </div>
+        
+      </div>
+      </div>
+      <div
+        uid="g_C2icdo9Z"
+        data-index="3"
+        class="gGDKHrsNEw gp-accordion-item_body hidden"
+        style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:0px;--pb-tablet:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px"
+      >
+        <div
+      tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="gAxHd55BB5 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gO3kT0GxMV "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:-16px;--mb:var(--g-s-2xl);--mt-mobile:-14px;--mb-mobile:var(--g-s-2xl)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-text-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>We offer Free tracked delivery on all orders, we also have the option for next day delivery for a fee.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+              </div>
+            <div
+                class="flex"
+                style="--jc:flex-start"
+              >
+                
+  <div class="overflow-clip" style="--w:100%;--w-tablet:100%;--w-mobile:100%;--bs:solid;--bw:0px 0px 1px 0px;--bc:#E0E0E0">
+    <div
+      data-index="4"
+      class="gGDKHrsNEw gp-accordion-item overflow-hidden"
+    >
+      <div
+        aria-hidden
+        data-index="4"
+        class="gGDKHrsNEw gp-accordion-item-gGDKHrsNEw-4 flex items-center gp-accordion-item_header cursor-pointer"
+        style="--pl:0px;--pr:0px;--pt:32px;--pb:32px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:32px;--pb-tablet:32px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:28px;--pb-mobile:28px;--fd:row-reverse;--jc:space-between;gap:16px;--bgc:transparent;--c:#242424;--bs:none;--bw:0px 0px 0px 0px;--bc:transparent"
+      >
+       <style class="accordion-style">.gp-accordion-item-gGDKHrsNEw-4:hover { 
+              .gp-collapsible-icon { 
+                  color: #575757 
+              }
+
+              .gp-icon { 
+                  color: #121212 
+              }
+          }</style>
+        <div class="inline-flex">
+        <span
+            style="--hvr-c:#575757;--c:#B4B4B4;width:16px;height:16px"
+            data-index="4"
+            class="gGDKHrsNEw gp-accordion-item_icon gp-collapsible-icon rotate-90 inline-flex items-center justify-center overflow-hidden transition-all duration-200 [&>svg]:h-auto [&>svg]:w-full"
+          ><svg fill='currentColor' width='16' height='16' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill='currentColor' d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg></span>
+          
+        </div>
+      <div class="flex items-center w-full" style="--gg:16px">
+        
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <span
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] overflow-hidden"
+          style="--w:100%;--ff:var(--g-font-Poppins, Poppins);--weight:600;--lh:130%;--size:19px;--size-mobile:17px;word-break:break-word"
+        >
+        Do you accept returns?
+        </span>
+      </div>
+    </div>
+        
+      </div>
+      </div>
+      <div
+        uid="ge4gd530UI"
+        data-index="4"
+        class="gGDKHrsNEw gp-accordion-item_body hidden"
+        style="--pl:0px;--pr:0px;--pt:0px;--pb:0px;--pl-tablet:0px;--pr-tablet:0px;--pt-tablet:0px;--pb-tablet:0px;--pl-mobile:0px;--pr-mobile:0px;--pt-mobile:0px;--pb-mobile:0px"
+      >
+        <div
+      tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="gAGXX80Dw4 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gl6vFE5Uw1 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt:-16px;--mb:var(--g-s-2xl);--mt-mobile:-14px;--mb-mobile:var(--g-s-2xl)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] text-g-text-1 gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>If you are unhappy with your order, we offer 14-day money back guarantee. Once we receive the return, we will process the refund and notify you immediately.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  
+              </div>
+            
+    </gp-accordion>
+    <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-accordion.js" defer="defer"></script>
+  
+      </div>
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+{% schema %}
+  {
+    
+    "name": "Section 8",
+    "tag": "section",
+    "class": "gps-492790951236863199 gps gpsi",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Section design by GemPages. [Click here to start design](https://builder.gempages.net/instant/hyperlink/edit?type=section&section_id=492790951236863199&template_id=492790951119422687)"
+      }
+    ],
+    "blocks": [{"type": "@app"}]
+  }
+{% endschema %}

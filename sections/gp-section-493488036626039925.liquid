@@ -1,0 +1,949 @@
+
+  
+  
+      <style>
+        @font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPHw.woff) format('woff');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
+  <style>
+    .gps-493488036626039925 .btn-disabled{cursor:default}.gps-493488036626039925 .pointer-events-none{pointer-events:none}.gps-493488036626039925 .invisible{visibility:hidden}.gps-493488036626039925 .static{position:static}.gps-493488036626039925 .absolute{position:absolute}.gps-493488036626039925 .relative{position:relative}.gps-493488036626039925 .inset-0{inset:0}.gps-493488036626039925 .left-\[var\(--left\)\]{left:var(--left)}.gps-493488036626039925 .top-\[var\(--top\)\]{top:var(--top)}.gps-493488036626039925 .z-1{z-index:1}.gps-493488036626039925 .mx-auto{margin-left:auto;margin-right:auto}.gps-493488036626039925 .mb-0{margin-bottom:0}.gps-493488036626039925 .flex{display:flex}.gps-493488036626039925 .inline-flex{display:inline-flex}.gps-493488036626039925 .grid{display:grid}.gps-493488036626039925 .contents{display:contents}.gps-493488036626039925 .\!hidden{display:none!important}.gps-493488036626039925 .hidden{display:none}.gps-493488036626039925 .h-5{height:20px}.gps-493488036626039925 .h-full{height:100%}.gps-493488036626039925 .w-5{width:20px}.gps-493488036626039925 .w-full{width:100%}.gps-493488036626039925 .max-w-full{max-width:100%}@keyframes spin{to{transform:rotate(1turn)}}.gps-493488036626039925 .animate-spin{animation:spin 1s linear infinite}.gps-493488036626039925 .flex-col{flex-direction:column}.gps-493488036626039925 .\!content-end{align-content:flex-end!important}.gps-493488036626039925 .items-center{align-items:center}.gps-493488036626039925 .justify-end{justify-content:flex-end}.gps-493488036626039925 .justify-center{justify-content:center}.gps-493488036626039925 .gap-y-0{row-gap:0}.gps-493488036626039925 .self-center{align-self:center}.gps-493488036626039925 .overflow-hidden{overflow:hidden}.gps-493488036626039925 .break-words{overflow-wrap:break-word}.gps-493488036626039925 .rounded-none{border-radius:0}.gps-493488036626039925 .text-center{text-align:center}.gps-493488036626039925 .text-g-text-3{color:var(--g-c-text-3)}.gps-493488036626039925 .line-through{text-decoration-line:line-through}.gps-493488036626039925 .no-underline{text-decoration-line:none}.gps-493488036626039925 .decoration-g-text-1{text-decoration-color:var(--g-c-text-1)}.gps-493488036626039925 .opacity-25{opacity:.25}.gps-493488036626039925 .opacity-30{opacity:.3}.gps-493488036626039925 .opacity-75{opacity:.75}.gps-493488036626039925 .transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-493488036626039925 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-493488036626039925 .transition-transform{transition-duration:.15s;transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-493488036626039925 .duration-200{transition-duration:.2s}.gps-493488036626039925 .duration-300{transition-duration:.3s}.gps-493488036626039925 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-493488036626039925 .disabled\:btn-disabled:disabled{cursor:default}.gps-493488036626039925 .disabled\:pointer-events-none:disabled{pointer-events:none}.gps-493488036626039925 .disabled\:opacity-30:disabled{opacity:.3}@media (hover:hover) and (pointer:fine){.gps-493488036626039925 .group\/hero:hover .group-hover\/hero\:bg-\[color\:var\(--hvr-bgc\2c _var\(--bgc\)\)\]{background-color:var(--hvr-bgc,var(--bgc))}.gps-493488036626039925 .group\/hero:hover .group-hover\/hero\:opacity-\[var\(--hvr-op\2c _var\(--op\)\)\]{opacity:var(--hvr-op,var(--op))}}.gps-493488036626039925 .data-\[hidden\=true\]\:hidden[data-hidden=true]{display:none}.gps-493488036626039925 .group[data-state=loading] .group-data-\[state\=loading\]\:visible{visibility:visible}.gps-493488036626039925 .group[data-state=loading] .group-data-\[state\=loading\]\:invisible{visibility:hidden}.gps-493488036626039925 .\[\&_\*\]\:max-w-full *{max-width:100%}.gps-493488036626039925 .\[\&_p\]\:inline p{display:inline}.gps-493488036626039925 .\[\&_p\]\:whitespace-pre-line p{white-space:pre-line}.gps-493488036626039925 .\[\&_p\]\:after\:whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-493488036626039925 .\[\&_p\]\:after\:content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}
+  </style>
+  
+      
+      
+            <section
+              class="mx-auto max-w-full"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="garD-0tePx"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pt:0px;--pl:15px;--pb:var(--g-s-3xl);--pr:15px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="garD-0tePx mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g4BBpzmqmH relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="gep3eIn0VL"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-2xl);--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gep3eIn0VL mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gJ2uwq-RZj relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l)" class="g0DfG7IcmJ ">
+      
+    <div
+      parentTag="Col"
+        class="g0DfG7IcmJ "
+        style="--ta:center"
+      >
+      <div class="flex" style="--jc:center">
+        <h2
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:center;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:0px;--lh:130%;--size:33px;--size-tablet:33px;--size-mobile:29px;--c:#242424;word-break:break-word"
+        >
+        <p>Hot Picks For You</p>
+        </h2>
+      </div>
+    </div>
+      </div>
+    </div>
+    </div>
+  
+    
+      
+      
+    <div
+      parentTag="Col" id="gNllEATTsg"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--cg:30px;--pc:start;--gtc:minmax(0, 6fr) minmax(0, 6fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gNllEATTsg mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g7IAs5DN2M relative flex flex-col"
+    >
+      
+    <link rel="preload" href="https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/" as="image" />
+    <link rel="preload" href="https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/" as="image" />
+    <link rel="preload" href="https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/" as="image" />
+    <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-hero-banner.js" defer="defer"></script>
+    <gp-hero-banner
+      gp-data='{"background":{"desktop":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"},"tablet":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"},"mobile":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"}},"uid":"g9bWZBnwjh"}'
+      
+      class="g9bWZBnwjh group/hero flex flex-col self-center transition-colors duration-200 ease-in-out w-full"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--mb-mobile:var(--g-s-2xl);--d:flex;--d-mobile:flex;--d-tablet:flex;--h:570px;--h-mobile:345px;--w:100%;--w-tablet:100%;--w-mobile:100%"
+    >
+      <div
+      class="relative flex flex-col overflow-hidden  justify-end"
+        style="--h:570px;--h-mobile:345px"
+      >
+        <div 
+          class="overflow-hidden w-full h-full"
+          style="--pos:absolute;--pos-tablet:absolute;--pos-mobile:absolute;clip:rect(0, auto, auto, 0)">
+          <div
+            aria-label="Background Image"
+            role="banner"
+            class="gp-hero-banner-bg absolute overflow-hidden inset-0 left-[var(--left)] top-[var(--top)] transition-transform flex items-center justify-center"
+            style="--bgc:var(--g-c-bg-2);--bgc-tablet:var(--g-c-bg-2);--bgc-mobile:var(--g-c-bg-2);--bgi:url(https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/);--bgi-tablet:url(https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/);--bgi-mobile:url(https://ucarecdn.com/90e8764a-da5d-47d5-89df-b125050ac788/-/format/auto/);--bgp:50% 50%;--bgp-tablet:50% 50%;--bgp-mobile:50% 50%;--bgs:cover;--bgs-tablet:cover;--bgs-mobile:cover;--bgr:no-repeat;--bgr-tablet:no-repeat;--bgr-mobile:no-repeat;--duration:0.5s;--scale:110%;--top:0;--left:0;--pos:absolute;--bga:scroll;--pos-tablet:absolute;--bga-tablet:scroll;--pos-mobile:absolute;--bga-mobile:scroll"
+          > </div>
+        </div>
+        <div
+          aria-label="Overlay"
+          role="banner"
+          class="absolute inset-0 left-[var(--left)] top-[var(--top)] transition-all duration-300 group-hover/hero:bg-[color:var(--hvr-bgc,_var(--bgc))] group-hover/hero:opacity-[var(--hvr-op,_var(--op))]"
+          style="--bgc:#121212;--top:0;--left:0;--op:0%"
+        > </div>
+        
+        
+      
+      
+    <div
+      id
+        style="--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%)"
+        class="!content-end mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g2hsAjSZRa relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product.v2.js" defer="defer"></script>
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if 'latest' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['']
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products 
+                      if item.id == 'latest'
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if 'latest' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['']
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products 
+                    if item.id == 'latest'
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "gcRMgdUEEH" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product class="" gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+      
+      
+    <div
+      id
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pl:var(--g-s-2xl);--pb:var(--g-s-l);--pr:var(--g-s-2xl);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gRKkuU68Yq relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-s)" class="gtAOVRv4_8 ">
+      
+    {%- unless product -%}
+      <p>Product not found</p>
+    {%- else -%}
+      
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <h1
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A']"
+          style="--w:100%;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        {{ product.title }}
+        </h1>
+      </div>
+    </div>
+      
+    {%- endunless -%}
+  
+      </div>
+      
+      
+    <div
+      parentTag="Col" id="gKUcnU0RKt"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--cg:var(--g-s-s);--pc:start;--pc-mobile:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gKUcnU0RKt mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gYucQW798- relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-price.js" defer="defer"></script>
+      <gp-product-price
+        gp-data='{"priceType":"regular","uid":"gRjThpqKwQ","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        class=" data-[hidden=true]:hidden"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="false"
+      >
+        
+    <div
+      id="p-price-gRjThpqKwQ"
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-price gp-money decoration-g-text-1"
+          style="--w:100%;--tdc:text-1;--tdt:1;--ta:left;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:130%;--size:28px;--size-tablet:28px;--size-mobile:24px;word-break:break-word"
+        >
+        
+                  {% if variant.price %} 
+                    {{ variant.price | money}}
+                  {% endif %}
+                
+        </div>
+      </div>
+    </div>
+      </gp-product-price>
+  
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="ghxyQUWnnC relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-price.js" defer="defer"></script>
+      <gp-product-price
+        gp-data='{"priceType":"compare","uid":"gZq-f_T-q0","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        class=" data-[hidden=true]:hidden"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+    <div
+      id="p-price-gZq-f_T-q0"
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-price gp-product-compare-price line-through"
+          style="--w:100%;--tdc:#FFFFFF;--tdt:1;--ta:left;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        
+                  {% if variant.compare_at_price  %} 
+                    {{ variant.compare_at_price | money}}
+                  {% endif %}
+                
+        </div>
+      </div>
+    </div>
+      </gp-product-price>
+  
+    </div>
+    </div>
+  
+    
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-button.js" defer="defer"></script>
+  
+  
+  
+   {%- liquid
+      assign inventory_quantity = variant.inventory_quantity | default: 0
+    -%}
+    <gp-product-button
+      gp-data='{"setting":{"actionEffect":"continue-shopping","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","label":"BUY NOW","outOfStockLabel":"Out of stock","errorType":"built-in","customURL":{"link":"/cart","target":"_self"}},"styles":{"errorTypo":{"type":"paragraph-2"},"successTypo":{"type":"paragraph-2"}},"disabled":"{{variant.available}}","variantID":"{{variant.id}}","totalVariant":"{{product.variants.size}}"}'
+    >
+        <div
+    
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--ta:left"
+    class="{% unless variant.available %} !hidden {% endunless %}"
+  >
+    <style>
+    .gfCDl2Gvo3.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #121212;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gfCDl2Gvo3:hover::before {
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #4D4D4D;
+  
+      
+    }
+  </style>
+    <button
+      type="button" data-id="gfCDl2Gvo3" aria-label="BUY NOW"
+      data-state="idle"
+      class="gfCDl2Gvo3 gp-button-base rounded-none max-w-full relative group inline-flex items-center justify-center no-underline transition-colors duration-300 disabled:btn-disabled disabled:opacity-30 disabled:pointer-events-none text-g-text-3 gp-button-atc"
+      style="--hvr-bg:#FF871D;--bg:#242424;--shadow:none;--c:var(--g-c-text-3, text-3);--pl:48px;--pr:48px;--pt:12px;--pb:12px;--pl-tablet:48px;--pr-tablet:48px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:48px;--pr-mobile:48px;--pt-mobile:12px;--pb-mobile:12px;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--tt:default;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px"
+    >
+        <svg
+          class="invisible absolute h-5 w-5 animate-spin group-data-[state=loading]:visible"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+
+    
+      <span
+        class="break-words group-data-[state=loading]:invisible [&_p]:whitespace-pre-line z-1 h-full flex items-center overflow-hidden "
+        style="--tt:default"
+      >
+        BUY NOW
+      </span>
+    </button>
+  </div>
+        <div
+    
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--ta:left"
+    class="{% if variant.available %} !hidden {% endif %}"
+  >
+    <style>
+    .gfCDl2Gvo3.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #121212;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gfCDl2Gvo3:hover::before {
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #4D4D4D;
+  
+      
+    }
+  </style>
+    <button
+      type="button" data-id="gfCDl2Gvo3" aria-label="Out of stock"
+      data-state="idle"
+      class="gfCDl2Gvo3 gp-button-base rounded-none max-w-full relative group inline-flex items-center justify-center no-underline transition-colors duration-300 disabled:btn-disabled disabled:opacity-30 disabled:pointer-events-none text-g-text-3 gp-button-sold-out btn-disabled opacity-30 pointer-events-none"
+      style="--hvr-bg:#FF871D;--bg:#242424;--shadow:none;--c:var(--g-c-text-3, text-3);--pl:48px;--pr:48px;--pt:12px;--pb:12px;--pl-tablet:48px;--pr-tablet:48px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:48px;--pr-mobile:48px;--pt-mobile:12px;--pb-mobile:12px;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--tt:default;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px"
+    >
+        <svg
+          class="invisible absolute h-5 w-5 animate-spin group-data-[state=loading]:visible"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+
+    
+      <span
+        class="break-words group-data-[state=loading]:invisible [&_p]:whitespace-pre-line z-1 h-full flex items-center overflow-hidden "
+        style="--tt:default"
+      >
+        Out of stock
+      </span>
+    </button>
+  </div>
+    </gp-product-button>
+  
+    </div>
+    </div>
+  
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="text-center">Product not found</div>
+    {%- endif -%}
+  
+    </div>
+    </div>
+  
+    
+      </div>
+    </gp-hero-banner>
+  
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gqPXUc1Mhz relative flex flex-col"
+    >
+      
+    <link rel="preload" href="https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/" as="image" />
+    <link rel="preload" href="https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/" as="image" />
+    <link rel="preload" href="https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/" as="image" />
+    <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-hero-banner.js" defer="defer"></script>
+    <gp-hero-banner
+      gp-data='{"background":{"desktop":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"},"tablet":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"},"mobile":{"attachment":"scroll","color":"bg-2","image":{"height":570,"src":"https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/","width":570},"position":{"x":50,"y":50},"repeat":"no-repeat","size":"cover","type":"image"}},"uid":"gEqmMtColY"}'
+      
+      class="gEqmMtColY group/hero flex flex-col self-center transition-colors duration-200 ease-in-out w-full"
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--d:flex;--d-mobile:flex;--d-tablet:flex;--h:570px;--h-mobile:345px;--w:100%;--w-tablet:100%;--w-mobile:100%"
+    >
+      <div
+      class="relative flex flex-col overflow-hidden  justify-end"
+        style="--h:570px;--h-mobile:345px"
+      >
+        <div 
+          class="overflow-hidden w-full h-full"
+          style="--pos:absolute;--pos-tablet:absolute;--pos-mobile:absolute;clip:rect(0, auto, auto, 0)">
+          <div
+            aria-label="Background Image"
+            role="banner"
+            class="gp-hero-banner-bg absolute overflow-hidden inset-0 left-[var(--left)] top-[var(--top)] transition-transform flex items-center justify-center"
+            style="--bgc:var(--g-c-bg-2);--bgc-tablet:var(--g-c-bg-2);--bgc-mobile:var(--g-c-bg-2);--bgi:url(https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/);--bgi-tablet:url(https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/);--bgi-mobile:url(https://ucarecdn.com/5e0cd2e8-738c-4727-be33-91b8b767784d/-/format/auto/);--bgp:50% 50%;--bgp-tablet:50% 50%;--bgp-mobile:50% 50%;--bgs:cover;--bgs-tablet:cover;--bgs-mobile:cover;--bgr:no-repeat;--bgr-tablet:no-repeat;--bgr-mobile:no-repeat;--duration:0.5s;--scale:110%;--top:0;--left:0;--pos:absolute;--bga:scroll;--pos-tablet:absolute;--bga-tablet:scroll;--pos-mobile:absolute;--bga-mobile:scroll"
+          > </div>
+        </div>
+        <div
+          aria-label="Overlay"
+          role="banner"
+          class="absolute inset-0 left-[var(--left)] top-[var(--top)] transition-all duration-300 group-hover/hero:bg-[color:var(--hvr-bgc,_var(--bgc))] group-hover/hero:opacity-[var(--hvr-op,_var(--op))]"
+          style="--bgc:#121212;--top:0;--left:0;--op:0%"
+        > </div>
+        
+        
+      
+      
+    <div
+      id
+        style="--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%)"
+        class="!content-end mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gmkCFwJ2si relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product.v2.js" defer="defer"></script>
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type == 'product'
+            if 'static' == 'static'
+              if 'latest' == 'latest'
+                paginate collections.all.products by 100000
+                  assign product = collections.all.products | sort: 'created_at' | reverse | first
+                endpaginate
+              else
+                assign product = all_products['']
+                if product == empty or product == null
+                  paginate collections.all.products by 100000
+                    for item in collections.all.products 
+                      if item.id == 'latest'
+                        assign product = item
+                      endif
+                    endfor
+                  endpaginate
+                endif
+              endif
+            endif
+          else
+            if 'latest' == 'latest'
+              paginate collections.all.products by 100000
+                assign product = collections.all.products | sort: 'created_at'| reverse | first
+              endpaginate
+            else
+              assign product = all_products['']
+              if product == empty or product == null
+                paginate collections.all.products by 100000
+                  for item in collections.all.products 
+                    if item.id == 'latest'
+                      assign product = item
+                    endif
+                  endfor
+                endpaginate
+              endif
+            endif
+          endif
+        -%}
+      
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "g4cr6T87rM" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product class="" gp-context='{"productId": {{ product.id }}, "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+      
+      
+    <div
+      id
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--pl:var(--g-s-2xl);--pb:var(--g-s-l);--pr:var(--g-s-2xl);--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g2mfPUrnH9 relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-s)" class="gsUBj5IBjW ">
+      
+    {%- unless product -%}
+      <p>Product not found</p>
+    {%- else -%}
+      
+        
+    <div
+      
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <h1
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A']"
+          style="--w:100%;--ta:left;--ta-mobile:center;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        {{ product.title }}
+        </h1>
+      </div>
+    </div>
+      
+    {%- endunless -%}
+  
+      </div>
+      
+      
+    <div
+      parentTag="Col" id="gWwlmSzo6_"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--cg:var(--g-s-s);--pc:start;--pc-mobile:center;--gtc:minmax(0, auto) minmax(0, auto);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gWwlmSzo6_ mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="gzOc5XSIDW relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-price.js" defer="defer"></script>
+      <gp-product-price
+        gp-data='{"priceType":"regular","uid":"gjuQpaZiqQ","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        class=" data-[hidden=true]:hidden"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="false"
+      >
+        
+    <div
+      id="p-price-gjuQpaZiqQ"
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-price gp-money decoration-g-text-1"
+          style="--w:100%;--tdc:text-1;--tdt:1;--ta:left;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:130%;--size:28px;--size-tablet:28px;--size-mobile:24px;word-break:break-word"
+        >
+        
+                  {% if variant.price %} 
+                    {{ variant.price | money}}
+                  {% endif %}
+                
+        </div>
+      </div>
+    </div>
+      </gp-product-price>
+  
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="g47cfj_GF4 relative flex flex-col"
+    >
+      
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-price.js" defer="defer"></script>
+      <gp-product-price
+        gp-data='{"priceType":"compare","uid":"g7Op4aB1RZ","locale":"{{shop.locale}}","currency":"{{shop.currency}}","moneyFormat":"{{ shop.money_format | replace: '"', '\\"' | escape }}"}'
+        
+        class=" data-[hidden=true]:hidden"
+        style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+        data-hidden="{% if variant.compare_at_price > variant.price and variant.compare_at_price >= 0 %}false{% else %}true{% endif %}"
+      >
+        
+    <div
+      id="p-price-g7Op4aB1RZ"
+        class=" "
+        style=""
+      >
+      <div class="" style="">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-price gp-product-compare-price line-through"
+          style="--w:100%;--tdc:#FFFFFF;--tdt:1;--ta:left;--c:#FFFFFF;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        
+                  {% if variant.compare_at_price  %} 
+                    {{ variant.compare_at_price | money}}
+                  {% endif %}
+                
+        </div>
+      </div>
+    </div>
+      </gp-product-price>
+  
+    </div>
+    </div>
+  
+    
+  <script src="https://d2ls1pfffhvy22.cloudfront.net/assets/gp-product-button.js" defer="defer"></script>
+  
+  
+  
+   {%- liquid
+      assign inventory_quantity = variant.inventory_quantity | default: 0
+    -%}
+    <gp-product-button
+      gp-data='{"setting":{"actionEffect":"continue-shopping","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","label":"BUY NOW","outOfStockLabel":"Out of stock","errorType":"built-in","customURL":{"link":"/cart","target":"_self"}},"styles":{"errorTypo":{"type":"paragraph-2"},"successTypo":{"type":"paragraph-2"}},"disabled":"{{variant.available}}","variantID":"{{variant.id}}","totalVariant":"{{product.variants.size}}"}'
+    >
+        <div
+    
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--ta:left"
+    class="{% unless variant.available %} !hidden {% endunless %}"
+  >
+    <style>
+    .gXh6der24O.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #121212;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gXh6der24O:hover::before {
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #4D4D4D;
+  
+      
+    }
+  </style>
+    <button
+      type="button" data-id="gXh6der24O" aria-label="BUY NOW"
+      data-state="idle"
+      class="gXh6der24O gp-button-base rounded-none max-w-full relative group inline-flex items-center justify-center no-underline transition-colors duration-300 disabled:btn-disabled disabled:opacity-30 disabled:pointer-events-none text-g-text-3 gp-button-atc"
+      style="--hvr-bg:#FF871D;--bg:#242424;--shadow:none;--c:var(--g-c-text-3, text-3);--pl:48px;--pr:48px;--pt:12px;--pb:12px;--pl-tablet:48px;--pr-tablet:48px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:48px;--pr-mobile:48px;--pt-mobile:12px;--pb-mobile:12px;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--tt:default;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px"
+    >
+        <svg
+          class="invisible absolute h-5 w-5 animate-spin group-data-[state=loading]:visible"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+
+    
+      <span
+        class="break-words group-data-[state=loading]:invisible [&_p]:whitespace-pre-line z-1 h-full flex items-center overflow-hidden "
+        style="--tt:default"
+      >
+        BUY NOW
+      </span>
+    </button>
+  </div>
+        <div
+    
+    style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--ta:left"
+    class="{% if variant.available %} !hidden {% endif %}"
+  >
+    <style>
+    .gXh6der24O.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #121212;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gXh6der24O:hover::before {
+      border-style: solid;
+  border-width: 0px 0px 0px 0px;
+  border-color: #4D4D4D;
+  
+      
+    }
+  </style>
+    <button
+      type="button" data-id="gXh6der24O" aria-label="Out of stock"
+      data-state="idle"
+      class="gXh6der24O gp-button-base rounded-none max-w-full relative group inline-flex items-center justify-center no-underline transition-colors duration-300 disabled:btn-disabled disabled:opacity-30 disabled:pointer-events-none text-g-text-3 gp-button-sold-out btn-disabled opacity-30 pointer-events-none"
+      style="--hvr-bg:#FF871D;--bg:#242424;--shadow:none;--c:var(--g-c-text-3, text-3);--pl:48px;--pr:48px;--pt:12px;--pb:12px;--pl-tablet:48px;--pr-tablet:48px;--pt-tablet:12px;--pb-tablet:12px;--pl-mobile:48px;--pr-mobile:48px;--pt-mobile:12px;--pb-mobile:12px;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--tt:default;--fs:normal;--ff:var(--g-font-Lato, Lato);--weight:700;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px"
+    >
+        <svg
+          class="invisible absolute h-5 w-5 animate-spin group-data-[state=loading]:visible"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+
+    
+      <span
+        class="break-words group-data-[state=loading]:invisible [&_p]:whitespace-pre-line z-1 h-full flex items-center overflow-hidden "
+        style="--tt:default"
+      >
+        Out of stock
+      </span>
+    </button>
+  </div>
+    </gp-product-button>
+  
+    </div>
+    </div>
+  
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="text-center">Product not found</div>
+    {%- endif -%}
+  
+    </div>
+    </div>
+  
+    
+      </div>
+    </gp-hero-banner>
+  
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+{% schema %}
+  {
+    
+    "name": "Section 5",
+    "tag": "section",
+    "class": "gps-493488036626039925 gps gpsi",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/e38a4c-3/apps/bold/app/shopify/edit?pageType=GP_INDEX&editorId=493488036407936117&sectionId=493488036626039925)"
+      }
+    ],
+    "blocks": [{"type": "@app"}]
+  }
+{% endschema %}

@@ -1,0 +1,16 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "thế-giới"
+  },
+  "sections": {
+    "featured_collection": {
+      "settings": {
+        "view_all_style": "outline",
+        "padding_top": 12,
+        "swipe_on_mobile": false
+      },
+      "blocks": {}
+    }
+  }
+}

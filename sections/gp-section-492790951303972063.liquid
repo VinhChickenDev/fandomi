@@ -1,0 +1,510 @@
+
+  
+  
+      <style>
+        @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfedA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlEw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff) format('woff');
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+      </style>
+    
+  <style>
+    .gps-492790951303972063 .pointer-events-auto{pointer-events:auto}.gps-492790951303972063 .relative{position:relative}.gps-492790951303972063 .mx-auto{margin-left:auto;margin-right:auto}.gps-492790951303972063 .mb-0{margin-bottom:0}.gps-492790951303972063 .\!inline{display:inline!important}.gps-492790951303972063 .flex{display:flex}.gps-492790951303972063 .inline-flex{display:inline-flex}.gps-492790951303972063 .grid{display:grid}.gps-492790951303972063 .h-6{height:24px}.gps-492790951303972063 .h-full{height:100%}.gps-492790951303972063 .w-6{width:24px}.gps-492790951303972063 .w-full{width:100%}.gps-492790951303972063 .max-w-full{max-width:100%}.gps-492790951303972063 .flex-col{flex-direction:column}.gps-492790951303972063 .items-center{align-items:center}.gps-492790951303972063 .justify-center{justify-content:center}.gps-492790951303972063 .gap-y-0{row-gap:0}.gps-492790951303972063 .overflow-hidden{overflow:hidden}.gps-492790951303972063 .leading-\[0\]{line-height:0}.gps-492790951303972063 .transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951303972063 .duration-200{transition-duration:.2s}.gps-492790951303972063 .ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-492790951303972063 .\[\&\>svg\]\:h-auto>svg{height:auto}.gps-492790951303972063 .\[\&\>svg\]\:w-full>svg{width:100%}.gps-492790951303972063 .\[\&_\*\]\:max-w-full *{max-width:100%}.gps-492790951303972063 .\[\&_p\]\:inline p{display:inline}.gps-492790951303972063 .\[\&_p\]\:after\:whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-492790951303972063 .\[\&_p\]\:after\:content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}
+  </style>
+  
+      
+      
+            <section
+              class="mx-auto max-w-full"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      id="BADIz2rAKY"
+        style="--border:;--rounded:;--pt:var(--g-s-3xl);--pl:15px;--pb:var(--g-s-3xl);--pr:15px;--cg:30px;--gtc:minmax(0, 24fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FBFBFB;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="BADIz2rAKY mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="15T0zz0zc1 relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="O5VUGcPfQ5"
+        style="--border:;--rounded:;--pt:var(--g-s-2xl);--pb:var(--g-s-2xl);--pt-tablet:var(--g-s-2xl);--pl-tablet:0px;--pb-tablet:var(--g-s-2xl);--pr-tablet:0px;--cg:30px;--cg-tablet:28px;--gtc:minmax(0, 1fr) minmax(0, 1fr);--gtc-mobile:minmax(0, 1fr);--w:var(--g-ct-w, 1200px);--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="O5VUGcPfQ5 mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:center;--o:0"
+      class="kj91N-S8pV relative flex flex-col"
+    >
+      
+      
+      
+    <div
+      parentTag="Col" id="eYD62HdVAV"
+        style="--b:solid;--bc:#E0E0E0;--bw:1px 1px 1px 1px;--bblr:9999px;--bbrr:9999px;--btlr:9999px;--btrr:9999px;--ml:auto;--mr:auto;--pt:var(--g-s-2xl);--pl:var(--g-s-2xl);--pb:var(--g-s-2xl);--pr:var(--g-s-2xl);--cg:30px;--gtc:minmax(0, 24fr);--w:460px;--w-tablet:100%;--w-mobile:100%;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="eYD62HdVAV mx-auto mb-0 grid max-w-full gap-y-0 transition-colors duration-200 ease-in-out [&_*]:max-w-full"
+    >
+    <div
+      label="Block" tag="Col" type="component"
+      style="--ai:normal;--jc:normal;--o:0"
+      class="1qIcQhPNqI relative flex flex-col"
+    >
+      <div
+    
+    role="presentation"
+    class="group/image _8hwnl5iEb"
+    style="--border:;--borderImg:;--boxShadowBtnImg:;--hasBoxShadowImg:;--bblr:999px;--bbrr:999px;--btlr:999px;--btrr:999px;--roundedImg:;--ta:center"
+    >
+      <div
+        class="pointer-events-auto h-full"
+        
+        class="h-full w-full"
+        style="border-radius:inherit;--ta:center"
+      >
+        <img loading="lazy"
+    quality="100" title="Image Title"
+    draggable="false"
+    class="!inline h-full max-w-full flex gp_lazyload"
+    data-src="https://ucarecdn.com/63415ea0-67c6-4f6f-8839-a2ee54b7013d/-/format/auto/" data-srcset="https://ucarecdn.com/63415ea0-67c6-4f6f-8839-a2ee54b7013d/-/format/auto/ 768w,https://ucarecdn.com/63415ea0-67c6-4f6f-8839-a2ee54b7013d/-/format/auto/ 1024w,https://ucarecdn.com/63415ea0-67c6-4f6f-8839-a2ee54b7013d/-/format/auto/ 1440w" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdj+Pr1638ACaED3/nOThIAAAAASUVORK5CYII=" width="792" height="1190" alt="Alt Image" priority
+    sizes="100vw"
+    style="--aspect:792/1190;--aspect-tablet:792/1190;--aspect-mobile:792/1190;--objf:cover;--w:100%;--w-tablet:100%;--w-mobile:100%;--h:auto;--h-tablet:auto;--h-mobile:auto;border-radius:inherit"
+  />
+      </div>
+  </div>
+    </div>
+    </div>
+  
+    
+    </div><div
+      label="Block" tag="Col" type="component"
+      style="--jc:center"
+      class="twXrfdSkHy relative flex flex-col"
+    >
+      <div style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mt-mobile:var(--g-s-2xl)" class="gCDO4LpZik ">
+      
+    <div
+      parentTag="Col"
+        class="gCDO4LpZik "
+        style="--tt:default;--ta:left"
+      >
+      <div class="flex" style="--jc:left">
+        <h2
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--c:#242424;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:500;--ls:normal;--lh:130%;--size:40px;--size-tablet:40px;--size-mobile:35px;word-break:break-word"
+        >
+        <p>Advice for a rose bear</p>
+        </h2>
+      </div>
+    </div>
+      </div>
+    <div
+      parentTag="Col"
+        class="gQF15xEIb3 "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--pt:var(--g-s-l)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:130%;--size:19px;--size-tablet:19px;--size-mobile:17px;word-break:break-word"
+        >
+        <p>Keep your anniversary gift going on forever</p>
+        </div>
+      </div>
+    </div><div style="" class="g6CBDlGbz9 ">
+      
+    
+    <div
+      uid="g6CBDlGbz9"
+       style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--mb:var(--g-s-l);--ta:left;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll">
+     
+     <ul
+        class="inline-flex flex-col"
+        style="--rg:var(--g-s-xl)"
+        >
+        
+    <li
+      class="flex w-full items-center gp-icon-list-item"
+      style="--cg:var(--g-s-l)"
+    >
+    <div
+      
+      style=""
+      class="gcoKR5rzGq relative flex flex-col"
+    >
+      <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] gHwDDpIul6"
+    >
+      <div class="inline-flex overflow-hidden g-s-icon-none"
+      style="--bs:none;--bw:0px;--bc:transparent;--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#2BBF2B;--t:rotate(0deg);--w:25px;--h:25px;--minw:25px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      
+      style=""
+      class="gnuE3m2RVu relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="g-i75JaH-H "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Do not water the roses or use any type of chemicals/liquids as this will immediately damage the roses.&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </li>
+    <li
+      class="flex w-full items-center gp-icon-list-item"
+      style="--cg:var(--g-s-l)"
+    >
+    <div
+      
+      style=""
+      class="gQA63QVH5m relative flex flex-col"
+    >
+      <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] gr1KOKb-Lm"
+    >
+      <div class="inline-flex overflow-hidden g-s-icon-none"
+      style="--bs:none;--bw:0px;--bc:transparent;--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#2BBF2B;--t:rotate(0deg);--w:25px;--h:25px;--minw:25px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      
+      style=""
+      class="gEa_iMf3JI relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="giF9HJd5Fm "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Do not expose to high levels of humidity and moisture.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </li>
+    <li
+      class="flex w-full items-center gp-icon-list-item"
+      style="--cg:var(--g-s-l)"
+    >
+    <div
+      
+      style=""
+      class="gLJ2xOw5Ty relative flex flex-col"
+    >
+      <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] gx8vEHG1hO"
+    >
+      <div class="inline-flex overflow-hidden g-s-icon-none"
+      style="--bs:none;--bw:0px;--bc:transparent;--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#2BBF2B;--t:rotate(0deg);--w:25px;--h:25px;--minw:25px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      
+      style=""
+      class="gGi4Fy_vQ8 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="g7d_dG7cJj "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Keep the roses in a cool dry place indoors at around room temperature</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </li>
+    <li
+      class="flex w-full items-center gp-icon-list-item"
+      style="--cg:var(--g-s-l)"
+    >
+    <div
+      
+      style=""
+      class="gfP-bXdC_- relative flex flex-col"
+    >
+      <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] gGuiwWJKJ0"
+    >
+      <div class="inline-flex overflow-hidden g-s-icon-none"
+      style="--bs:none;--bw:0px;--bc:transparent;--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#2BBF2B;--t:rotate(0deg);--w:25px;--h:25px;--minw:25px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      
+      style=""
+      class="gY9rCMcuit relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gVhwrTVK0w "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>If the roses need cleaning use a gentle soft brush or a light feather duster</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </li>
+    <li
+      class="flex w-full items-center gp-icon-list-item"
+      style="--cg:var(--g-s-l)"
+    >
+    <div
+      
+      style=""
+      class="g-5xwFMI1F relative flex flex-col"
+    >
+      <div
+      
+      style="--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none);--ta:left"
+      class="leading-[0] ga1sGGtdkQ"
+    >
+      <div class="inline-flex overflow-hidden g-s-icon-none"
+      style="--bs:none;--bw:0px;--bc:transparent;--bg:transparent"
+      >
+      <div
+      
+    >
+      <span
+        style="--c:#2BBF2B;--t:rotate(0deg);--w:25px;--h:25px;--minw:25px"
+        class="inline-flex items-center justify-center overflow-hidden [&>svg]:w-full [&>svg]:h-auto"
+      ><svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" className="w-6 h-6"  viewBox="0 0 512 512" fill="currentColor">              <path fill="currentColor" strokeLinecap="round" strokeLinejoin="round" fill="currentColor" d="M512 256A256 256 0 1 1 0 256a256 256 0 0 1 512 0zm-127.04 -96.96a24 24 0 0 0 -34.56 0.704L239.264 301.344 172.288 234.336a24 24 0 0 0 -33.92 33.92L223.04 352.96a24 24 0 0 0 34.528 -0.64l127.744 -159.68a24 24 0 0 0 -0.32 -33.6z" /></svg></span>
+    </div>
+      </div>
+    </div>
+    </div><div
+      
+      style=""
+      class="gL2-lpW817 relative flex flex-col"
+    >
+      
+    <div
+      parentTag="Col"
+        class="gxAEmrj5li "
+        style="--tt:default;--ta:left;--b:solid;--bc:#121212;--bw:0px;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--radius:var(--g-radius-none)"
+      >
+      <div class="flex" style="--jc:left">
+        <div
+          data-gp-text
+          class="[&_p]:inline [&_p]:after:whitespace-pre-wrap [&_p]:after:content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ts:none;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--c:#575757;--fs:normal;--ff:var(--g-font-Poppins, Poppins);--weight:400;--ls:normal;--lh:150%;--size:16px;--size-tablet:16px;--size-mobile:14px;word-break:break-word"
+        >
+        <p>Occasionally brush the roses to remove dust that can accumulate over time</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </li>
+      </ul>
+  </div>
+  
+      </div>
+    </div>
+    </div>
+  
+    
+    </div>
+    </div>
+  
+            </section>
+          
+    
+{% schema %}
+  {
+    
+    "name": "Section 5",
+    "tag": "section",
+    "class": "gps-492790951303972063 gps gpsi",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Section design by GemPages. [Click here to start design](https://builder.gempages.net/instant/hyperlink/edit?type=section&section_id=492790951303972063&template_id=492790951119422687)"
+      }
+    ],
+    "blocks": [{"type": "@app"}]
+  }
+{% endschema %}

@@ -1,0 +1,374 @@
+{
+  "sections": {
+    "0413e55c-7857-44d0-a732-a74ede130067": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Personalized Gifts Recommended For You",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "personalized-gifts-recommended-for-you",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 20,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "88bc499d-e6eb-4ea6-998f-f7c222a19b1d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764053565729__88bc499d-e6eb-4ea6-998f-f7c222a19b1d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>WHAT ARE PERSONALIZED VALENTINE GIFTS FOR HIM<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764053565729__88bc499d-e6eb-4ea6-998f-f7c222a19b1d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When it comes to gift giving, Valentine's Day is the perfect opportunity to show your special someone how much you care. And what better way to do that than with a personalized gift that is tailored just for him? Whether it's a custom-made shirt with his initials or a mug with a sweet message, a personalized gift is always sure to please. So if you're looking for something extra special this Valentine's Day, be sure to consider a personalized gift for the man in your life. It's sure to <a href=\"\/collections\/valentines-day\" title=\"Valentine's Day\"><strong>make him feel loved and appreciated<\/strong><\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764053565729__88bc499d-e6eb-4ea6-998f-f7c222a19b1d-heading-1",
+        "template--21764053565729__88bc499d-e6eb-4ea6-998f-f7c222a19b1d-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "828b6a48-4a56-402a-b784-6595bb2c9fd7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764053565729__828b6a48-4a56-402a-b784-6595bb2c9fd7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>HOW TO CREATE PERSONALIZED VALENTINE GIFTS FOR HIM<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764053565729__828b6a48-4a56-402a-b784-6595bb2c9fd7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fampanda’s personalized gifts are one-of-a-kind symbols of appreciation. This makes it simple to <a href=\"\/collections\/valentine-gift-for-her\" title=\"Valentine Gift For Her\"><strong>provide each individual with a once-in-a-lifetime experience<\/strong><\/a>. Look through our unusual Valentine's Day gifts to find the perfect one, and then personalize it to make it truly unique. We might collaborate to find them a unique and meaningful Valentine's Day gift.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764053565729__828b6a48-4a56-402a-b784-6595bb2c9fd7-heading-1",
+        "template--21764053565729__828b6a48-4a56-402a-b784-6595bb2c9fd7-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "dc305e42-2f67-4c82-8852-7061833678f7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__dc305e42-2f67-4c82-8852-7061833678f7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>BEST VALENTINE GIFTS IDEAS FOR HIM<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__dc305e42-2f67-4c82-8852-7061833678f7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It can be tough to think of the perfect gift for the special man in your life, but with a little creativity, you can find something he’ll love. If he’s a sports fan, consider getting him tickets to his favorite team’s next game. Or, if he’s a foodie, cook him dinner using his favorite ingredients. You can also add a personal touch to any gift by having it engraved with his initials or a special message. Whatever you choose, make sure it’s something that he’ll appreciate and that <a href=\"\/collections\/gifts-for-husband\" title=\"Gifts for Husband\"><strong>shows how much you care about him<\/strong><\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__dc305e42-2f67-4c82-8852-7061833678f7-heading-1",
+        "template--21764092657953__dc305e42-2f67-4c82-8852-7061833678f7-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "ee12498d-ef1f-4922-9cff-0212f1691897": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__ee12498d-ef1f-4922-9cff-0212f1691897-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized T-shirt<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__ee12498d-ef1f-4922-9cff-0212f1691897-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The present that keeps on giving is a customized t-shirt for couples. You'll be reminded of your lover and the particular bond you share every time you wear the shirt. A customized t-shirt is sure to please, whether it's a basic design or something more detailed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__ee12498d-ef1f-4922-9cff-0212f1691897-heading-1",
+        "template--21764092657953__ee12498d-ef1f-4922-9cff-0212f1691897-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "cb1df270-dcce-413f-8b55-34a40cca1597": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__cb1df270-dcce-413f-8b55-34a40cca1597-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Mug<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__cb1df270-dcce-413f-8b55-34a40cca1597-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What could be more romantic than enjoying coffee or tea from a mug created just for them? A particular greeting, the couple's names, or even a love poem can be etched on a personalized mug. A personalized mug is sure to make them feel loved and valued, whether they are newlyweds or have been together for decades.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__cb1df270-dcce-413f-8b55-34a40cca1597-heading-1",
+        "template--21764092657953__cb1df270-dcce-413f-8b55-34a40cca1597-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "03fc22a7-9935-4e1e-98e7-0ad004c63e47": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__03fc22a7-9935-4e1e-98e7-0ad004c63e47-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Tumbler<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "bcebed54-d036-430c-b3d2-f6e0c456de0a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It can be personalized with your names, initials, or a distinctive design that is exclusive to the two of you. This tumbler will be a continual reminder of your love for each other whether you're enjoying a morning cup of coffee or taking a break from work with your favorite beverage. Not to mention that it's a gift that keeps on giving—every time you use it, you'll remember that special someone.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__03fc22a7-9935-4e1e-98e7-0ad004c63e47-heading-1",
+        "bcebed54-d036-430c-b3d2-f6e0c456de0a"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "470b1d7a-aea7-4bc3-85b5-84fe0ac646c0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__470b1d7a-aea7-4bc3-85b5-84fe0ac646c0-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Pillow<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__470b1d7a-aea7-4bc3-85b5-84fe0ac646c0-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A pillow personalized with your initials and the date of your special day is a gift that will be treasured for a lifetime. Every time you see it, it reminds you of your love. You can glance at it while snuggling up on the couch and remember all the good times you've shared.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__470b1d7a-aea7-4bc3-85b5-84fe0ac646c0-heading-1",
+        "template--21764092657953__470b1d7a-aea7-4bc3-85b5-84fe0ac646c0-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "ef81d2a2-aabf-4a8c-97c6-cff78f6870bf": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__ef81d2a2-aabf-4a8c-97c6-cff78f6870bf-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Blanket<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__ef81d2a2-aabf-4a8c-97c6-cff78f6870bf-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether it's a photo collage of their fondest times together or a simple love pattern, a personalized blanket will make them happy.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__ef81d2a2-aabf-4a8c-97c6-cff78f6870bf-heading-1",
+        "template--21764092657953__ef81d2a2-aabf-4a8c-97c6-cff78f6870bf-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "863fc393-e648-41b9-905b-5c0f4b419b06": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__863fc393-e648-41b9-905b-5c0f4b419b06-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Canvas<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__863fc393-e648-41b9-905b-5c0f4b419b06-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether they've been together for two years or twenty, a personalized present like this will demonstrate your affection. Imagine their expressions when they see their names and a loving message printed on a lovely piece of art. It'll be something they remember for the rest of their lives.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__863fc393-e648-41b9-905b-5c0f4b419b06-heading-1",
+        "template--21764092657953__863fc393-e648-41b9-905b-5c0f4b419b06-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "1b913ed0-3833-489c-955c-3be3ba2a3edd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21764092657953__1b913ed0-3833-489c-955c-3be3ba2a3edd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Personalized Poster<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "template--21764092657953__1b913ed0-3833-489c-955c-3be3ba2a3edd-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A customized poster is the ideal way to accomplish this. You may customize it with your own images and writing to make a one-of-a-kind present that will be remembered for years to come. Best of all, you can create your poster fully online, making it simple and quick to get started.<\/p><p>If you're looking for the perfect Valentine's Day gift for your special someone, go no further than Famvibe. We offer a wide range of personalized posters that are excellent for couples. We offer the perfect poster for you, whether you want something romantic, funny, or simply unique. Most importantly, our posters are reasonably priced,  <a href=\"\/collections\/valentine-gift-for-her\" target=\"_blank\" title=\"Valentine Gift For Her\"><strong>allowing you to select the appropriate gift<\/strong><\/a> without breaking the bank. Show your significant other how much you care this Valentine's Day by getting a personalized poster from Famvibe. You will not be disappointed!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21764092657953__1b913ed0-3833-489c-955c-3be3ba2a3edd-heading-1",
+        "template--21764092657953__1b913ed0-3833-489c-955c-3be3ba2a3edd-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "0413e55c-7857-44d0-a732-a74ede130067",
+    "banner",
+    "product-grid",
+    "88bc499d-e6eb-4ea6-998f-f7c222a19b1d",
+    "828b6a48-4a56-402a-b784-6595bb2c9fd7",
+    "dc305e42-2f67-4c82-8852-7061833678f7",
+    "ee12498d-ef1f-4922-9cff-0212f1691897",
+    "cb1df270-dcce-413f-8b55-34a40cca1597",
+    "03fc22a7-9935-4e1e-98e7-0ad004c63e47",
+    "470b1d7a-aea7-4bc3-85b5-84fe0ac646c0",
+    "ef81d2a2-aabf-4a8c-97c6-cff78f6870bf",
+    "863fc393-e648-41b9-905b-5c0f4b419b06",
+    "1b913ed0-3833-489c-955c-3be3ba2a3edd"
+  ]
+}

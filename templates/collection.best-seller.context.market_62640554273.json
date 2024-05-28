@@ -1,0 +1,14 @@
+{
+  "parent": "collection.best-seller.json",
+  "context": {
+    "market": "thế-giới"
+  },
+  "sections": {
+    "48785f90-5545-4084-aa2d-de966feeb27a": {
+      "settings": {
+        "show_description": false
+      },
+      "blocks": {}
+    }
+  }
+}

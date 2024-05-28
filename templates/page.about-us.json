@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "c1002246-0651-485e-b011-1b07f7216181": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grand-Mom.jpg",
+            "title": "<strong>Christmas gift!<\/strong>",
+            "text": "<p>My sister received her gift I got her for Christmas and she apparently loves it. Thank you for putting a smile on my sisters face. ❤️<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Grand-Daughter.jpg",
+            "title": "<strong>Lovely pillow!<\/strong>",
+            "text": "<p>My granddaughter loves the pillow since we can’t be together all the time<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Family.jpg",
+            "title": "<strong>Wonderful T-shirts!<\/strong>",
+            "text": "<p>These great grandpa and great grandma t-shirts are so wonderful. The best Christmas presents ever!! Thank you Fampanda!!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-2",
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-3",
+        "template--21776894460193__c1002246-0651-485e-b011-1b07f7216181-column-1"
+      ],
+      "settings": {
+        "title": "Our Meaningful Moments",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c1002246-0651-485e-b011-1b07f7216181"
+  ]
+}

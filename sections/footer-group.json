@@ -1,0 +1,95 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "22dbef95-80fa-4ac5-8213-8f1e07c7600d": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Unlock 10% OFF Your First Order!<\/strong>",
+            "heading_size": "h2"
+          }
+        },
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>As soon as you join, we'll send you a sweet 10% OFF deal for your first order. So go ahead, find gifts wrapped with care and save! <\/p>"
+          }
+        },
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-email_form-1": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-heading-1",
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-paragraph-1",
+        "sections--21595563819297__22dbef95-80fa-4ac5-8213-8f1e07c7600d-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "scheme-ee606ed9-27e2-4889-80ac-d0ec1e5cf281",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "13a8e76e-0466-4653-a73b-ceb44d6e012c": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": false
+          }
+        },
+        "780c895d-f1bd-4e58-b7d5-4610a307b527": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>COMPANY<\/strong>",
+            "menu": "footer"
+          }
+        },
+        "f8f8c390-5cf2-4dc8-baf3-47a63af281ec": {
+          "type": "link_list",
+          "settings": {
+            "heading": "<strong>HELP<\/strong>",
+            "menu": "help"
+          }
+        },
+        "0ab50e3e-0fec-4bb9-b815-f435030eed4f": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>FAMDOMI<\/strong>",
+            "subtext": "<p><strong>US Warehouse<\/strong><\/p><p>2519 S Shields St Ste 1K PMB 3043, Fort Collins, Colorado 80526<\/p><p>(Storage point)<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "13a8e76e-0466-4653-a73b-ceb44d6e012c",
+        "780c895d-f1bd-4e58-b7d5-4610a307b527",
+        "f8f8c390-5cf2-4dc8-baf3-47a63af281ec",
+        "0ab50e3e-0fec-4bb9-b815-f435030eed4f"
+      ],
+      "settings": {
+        "color_scheme": "scheme-ee606ed9-27e2-4889-80ac-d0ec1e5cf281",
+        "newsletter_enable": false,
+        "newsletter_heading": "<strong> Unlock 10% OFF Your First Order!<\/strong>",
+        "enable_follow_on_shop": true,
+        "show_social": false,
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "22dbef95-80fa-4ac5-8213-8f1e07c7600d",
+    "footer"
+  ]
+}

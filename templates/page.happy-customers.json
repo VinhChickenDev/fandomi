@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "a90d99dd-ff82-415a-85c7-ff70da0b44bd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21595563655457__a90d99dd-ff82-415a-85c7-ff70da0b44bd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Happy Customers",
+            "heading_size": "h1"
+          }
+        },
+        "template--21595563655457__a90d99dd-ff82-415a-85c7-ff70da0b44bd-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Customers from all over the world love our products!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21595563655457__a90d99dd-ff82-415a-85c7-ff70da0b44bd-heading-1",
+        "template--21595563655457__a90d99dd-ff82-415a-85c7-ff70da0b44bd-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "169779481678b09008": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a90d99dd-ff82-415a-85c7-ff70da0b44bd",
+    "169779481678b09008"
+  ]
+}

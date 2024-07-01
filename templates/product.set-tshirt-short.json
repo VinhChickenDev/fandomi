@@ -1,0 +1,465 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "loox_reviews_loox_rating_DgLQQp": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "7302e803-49aa-4baf-8ff9-8fbb286b4739": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "delivery_date_6HEezE": {
+          "type": "delivery_date",
+          "settings": {
+            "region_highlight_text": "🚚 Arrives soon! Get it by [date-time] if you order today. Free, no hassle returns & exchanges<\/li><\/ul>",
+            "timeline_title_1": "Order placed",
+            "timeline_title_2": "Order ships",
+            "timeline_title_3": "Delivered!",
+            "description_shipping": "",
+            "timeline_date_1": 10,
+            "timeline_date_2": 10,
+            "timeline_date_3": 10,
+            "timeline_date_4": 10,
+            "timeline_date_5": 6,
+            "timeline_date_6": 15
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "vitals_size_chart_ghNREQ": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/size-chart\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "loox_reviews_loox_snippets_widget_zRGxqP": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-snippets-widget\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "alignment": "left",
+            "max-width": "",
+            "color-scheme": "default",
+            "shadow": "",
+            "show-rating": true,
+            "show-image": true,
+            "hide-arrows-mobile": false,
+            "font-size": 14,
+            "show-border": false,
+            "border-radius": 16,
+            "background-color": "",
+            "text-color": "",
+            "name-color": "",
+            "rating-icon-color": "",
+            "border-color": "",
+            "shadow-color": "",
+            "reviews-limit": 10
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "vitals_trust_cQj4Bm": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/trust\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd": {
+          "type": "description",
+          "settings": {}
+        },
+        "text_fKXYU3": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "loox_reviews_loox_rating_DgLQQp",
+        "7302e803-49aa-4baf-8ff9-8fbb286b4739",
+        "price",
+        "delivery_date_6HEezE",
+        "variant_picker",
+        "vitals_size_chart_ghNREQ",
+        "loox_reviews_loox_snippets_widget_zRGxqP",
+        "quantity_selector",
+        "buy_buttons",
+        "vitals_trust_cQj4Bm",
+        "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd",
+        "text_fKXYU3"
+      ],
+      "custom_css": [
+        ".quantity__label.form__label {font-weight: bold !important;}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "slideshow_tdyTqW": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FzKdyH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black-T-Shirt-Banner-Desktop.jpg",
+            "heading": "",
+            "heading_size": "h0",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FzKdyH"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".banner {display: block; margin: auto; margin-top: 30px; max-width: 140rem;}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 3,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "image_banner_CQYKG7": {
+      "type": "image-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 750px) {}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/White-T-Shirt-Banner-Desktop_32dcc68e-7523-48bc-8964-0c4b84ea9d79.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_bkzXGp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EaXgkL": {
+          "type": "heading",
+          "settings": {
+            "heading": "General intro",
+            "heading_size": "h2"
+          }
+        },
+        "text_YqmN6r": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking for a way to express your unique personality through your clothing? Or maybe you're on the hunt for a special gift for someone close to you? Look no further than our Personalized Shirts! Our shirts offer the perfect combination of fashion, comfort, and personal expression, allowing you to stand out from the crowd and show off your love, gratitude, and pride.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EaXgkL",
+        "text_YqmN6r"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {color: #6e7a14;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "image_banner_rdHG7q": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_VAbiCw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TahYR3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thiet_ke_chua_co_ten.jpg",
+            "title": "<strong>Exceptional Quality<\/strong>",
+            "text": "<p>At our company, we're dedicated to delivering exceptional products that exceed your expectations. Our Personalized Shirts are crafted with meticulous attention to detail and quality, using soft, breathable materials that provide all-day comfort. Each shirt is carefully tailored to ensure a relaxed fit and optimal freedom of movement, so you can wear it with ease and confidence all day long.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hrngjp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thiet_ke_chua_co_ten_2.jpg",
+            "title": "<strong>Enduring Color Quality<\/strong>",
+            "text": "<p>We understand the importance of color quality, which is why our personalized t-shirts are designed to withstand the test of time. Our colors remain vibrant and vivid, even after numerous washes, ensuring your t-shirt stays fresh and captivating for years to come.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TahYR3",
+        "column_hrngjp"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2,h3 {color: #6e7a14;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_wDhKJe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7H6HKg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thiet_ke_chua_co_ten_1.jpg",
+            "title": "<strong>State-of-the-Art Printing<\/strong>",
+            "text": "<p>To bring your personalized design to life, we use cutting-edge printing technology. With meticulous attention to detail, our state-of-the-art printing process flawlessly replicates your chosen design on the fabric, ensuring a stunning and vibrant result.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3ngByx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thiet_ke_chua_co_ten_3.jpg",
+            "title": "<strong>Personalize Your Expression of Love<\/strong>",
+            "text": "<p>Our Personalized Shirts offer a unique way to express your love and appreciation for yourself, your family or loved ones. Choose from a variety of customizable designs that allow you to include names, photos, or special dates that hold significance to you. This personalization adds an extra layer of sentiment and makes the gift truly unique and exclusive to your loved ones.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7H6HKg",
+        "column_3ngByx"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2,h3 {color: #6e7a14;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_GP4wyw": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_Nrfn6m": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_FKnBw4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_t3WTw6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_6jDf3c": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_Nrfn6m",
+        "collapsible_row_FKnBw4",
+        "collapsible_row_t3WTw6",
+        "collapsible_row_6jDf3c"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "<strong>FAQs<\/strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More Items to Consider",
+        "heading_size": "h2",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 28
+      }
+    },
+    "17055615561255695c": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_VWFQAX": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_VWFQAX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_tdyTqW",
+    "image_banner_CQYKG7",
+    "rich_text_bkzXGp",
+    "image_banner_rdHG7q",
+    "multicolumn_VAbiCw",
+    "multicolumn_wDhKJe",
+    "collapsible_content_GP4wyw",
+    "related-products",
+    "17055615561255695c"
+  ]
+}

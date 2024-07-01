@@ -22,10 +22,6 @@
             "emptyRatingWidget": false
           }
         },
-        "stoked_inventory_sold_count_inventory_sold_count_Ede46h": {
-          "type": "shopify:\/\/apps\/stoked-inventory-sold-count\/blocks\/inventory-sold-count\/0339db1a-a4fc-4743-bce1-de401736e185",
-          "settings": {}
-        },
         "7302e803-49aa-4baf-8ff9-8fbb286b4739": {
           "type": "rating",
           "settings": {}
@@ -33,6 +29,22 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "delivery_date_Jah7yb": {
+          "type": "delivery_date",
+          "settings": {
+            "region_highlight_text": "🚚 Arrives soon! Get it by [date-time] if you order today. Free, no hassle returns & exchanges",
+            "timeline_title_1": "Order placed",
+            "timeline_title_2": "Order ships",
+            "timeline_title_3": "Delivered!",
+            "description_shipping": "",
+            "timeline_date_1": 10,
+            "timeline_date_2": 10,
+            "timeline_date_3": 10,
+            "timeline_date_4": 10,
+            "timeline_date_5": 6,
+            "timeline_date_6": 15
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -81,15 +93,6 @@
           "type": "shopify:\/\/apps\/vitals\/blocks\/trust\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
           "settings": {}
         },
-        "vitals_ub_bogo_BtNqDn": {
-          "type": "shopify:\/\/apps\/vitals\/blocks\/ub-bogo\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-          "settings": {}
-        },
-        "vitals_ub_product_bundles_xzyg6t": {
-          "type": "shopify:\/\/apps\/vitals\/blocks\/ub-product-bundles\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-          "disabled": true,
-          "settings": {}
-        },
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd": {
           "type": "description",
           "settings": {}
@@ -101,27 +104,32 @@
             "text": "",
             "text_style": "body"
           }
+        },
+        "cross_selling_EVj3nd": {
+          "type": "cross_selling",
+          "settings": {
+            "richtext": "<h4><strong>ADD MORE INCLUDED ACCESSORIES BELOW?<\/strong><\/h4>"
+          }
         }
       },
       "block_order": [
         "title",
         "loox_reviews_loox_rating_DgLQQp",
-        "stoked_inventory_sold_count_inventory_sold_count_Ede46h",
         "7302e803-49aa-4baf-8ff9-8fbb286b4739",
         "price",
+        "delivery_date_Jah7yb",
         "variant_picker",
         "vitals_size_chart_e4i7Vb",
         "quantity_selector",
         "loox_reviews_loox_snippets_widget_ePpJ7U",
         "buy_buttons",
         "vitals_trust_cQj4Bm",
-        "vitals_ub_bogo_BtNqDn",
-        "vitals_ub_product_bundles_xzyg6t",
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd",
-        "text_fKXYU3"
+        "text_fKXYU3",
+        "cross_selling_EVj3nd"
       ],
       "custom_css": [
-        ".badge.price__badge-sale {display: none;}"
+        ".quantity__label.form__label {font-weight: bold !important;}"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -184,7 +192,7 @@
         "@media screen and (min-width: 750px) {}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Artboard_3_4_195a09f9-f379-442f-b620-530e178ed511.jpg",
+        "image": "shopify:\/\/shop_images\/ytytytyt_74036679-1e60-44a6-9436-35ddfb1e6e0d.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -219,13 +227,13 @@
         "text_YqmN6r"
       ],
       "custom_css": [
-        "h2 {color: #6e7a14;}"
+        "h2 {color: #a42243;}"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 0,
         "padding_bottom": 12
       }
@@ -275,7 +283,7 @@
         "column_hrngjp"
       ],
       "custom_css": [
-        "h2,h3 {color: #6e7a14;}"
+        "h2,h3 {color: #a42243;}"
       ],
       "settings": {
         "title": "",
@@ -323,7 +331,7 @@
         "column_3ngByx"
       ],
       "custom_css": [
-        "h2,h3 {color: #6e7a14;}"
+        "h2,h3 {color: #a42243;}"
       ],
       "settings": {
         "title": "",
@@ -340,6 +348,115 @@
         "swipe_on_mobile": false,
         "padding_top": 12,
         "padding_bottom": 36
+      }
+    },
+    "collapsible_content_k9hyEm": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_3CL3AC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "1. What is a personalized product?",
+            "icon": "none",
+            "row_content": "<h4>A personalized is a custom-made shirt featuring style designs, where customers can add their own text, images, or patterns to create a unique piece of clothing.<\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yKmaL9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "2. How to use a discount code?",
+            "icon": "none",
+            "row_content": "<h4>Enter the discount code at checkout in the designated field. The discount will be applied to your order total automatically.<\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_3wzWi9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "3. What payment types do you accept? How safe is your payment process?",
+            "icon": "none",
+            "row_content": "<h4>We accept payment through <strong>Paypal, Visa & Mastercard and<\/strong> Visa & Mastercard (such as <strong>Amex, Discover Card, JCB<\/strong>...)<\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zXkPtK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "4. Is there a warranty for your products?",
+            "icon": "none",
+            "row_content": "<h4>Yes, we offer a warranty for our products. The duration and terms of the warranty vary depending on the specific product. Please refer to our <a href=\"https:\/\/famdomi.com\/pages\/refund-policy\" target=\"_blank\" title=\"https:\/\/famdomi.com\/pages\/refund-policy\"><em>Refund And Return Policy<\/em><\/a> page on our website for more information or contact our customer support for assistance.<\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XYg47z": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "5. Can I change my shipping address after placing an order?",
+            "icon": "none",
+            "row_content": "<h4>If you need to change your shipping address after placing an order, please contact our customer support team as soon as possible. We will do our best to accommodate your request, but please note that changes may not be possible if the order has already been processed for shipping.<\/h4><h4><\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_6Q8kF8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "6. How can I contact customer support?",
+            "icon": "none",
+            "row_content": "<h4>You can reach our customer support team by emailing us at <a><strong>support@famdomi.com<\/strong><\/a><strong>.<\/strong> Our dedicated team is here to assist you with any questions or concerns you may have.<\/h4>",
+            "page": ""
+          }
+        },
+        "collapsible_row_ABbqnN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "7. What should I do if my package arrives damaged or incomplete?",
+            "icon": "none",
+            "row_content": "<h4>If your package arrives damaged or incomplete, please contact our customer support team immediately. Provide details about the issue and include photos of the damaged items and packaging if possible. We will work swiftly to resolve the problem and ensure your satisfaction.<\/h4>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_3CL3AC",
+        "collapsible_row_yKmaL9",
+        "collapsible_row_3wzWi9",
+        "collapsible_row_zXkPtK",
+        "collapsible_row_XYg47z",
+        "collapsible_row_6Q8kF8",
+        "collapsible_row_ABbqnN"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "<strong>FAQs <\/strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "More Items to Consider",
+        "heading_size": "h2",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 16,
+        "padding_bottom": 20
       }
     },
     "17055615561255695c": {
@@ -363,30 +480,6 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "1713677196bf507765": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "More Items to Consider",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 24,
-        "padding_bottom": 28
-      }
     }
   },
   "order": [
@@ -397,8 +490,8 @@
     "image_banner_rdHG7q",
     "multicolumn_VAbiCw",
     "multicolumn_wDhKJe",
-    "17055615561255695c",
-    "1713677196bf507765",
-    "related-products"
+    "collapsible_content_k9hyEm",
+    "related-products",
+    "17055615561255695c"
   ]
 }

@@ -1,0 +1,116 @@
+{% assign cross_selling_arr = product.metafields.vinhtran.cross_selling.value %}
+
+{% if cross_selling_arr != blank %}
+{{ 'vt__product-page--cross-selling.css' | asset_url | stylesheet_tag }}
+<cross-selling>
+    <div class="cross-selling">
+        <div class="cross-selling__heading">Add more included accessories below?</div>
+        <div class="cross-selling__list">
+            {% for cross_selling in cross_selling_arr %}
+                <div class="cross-selling__item">
+                    <div class="cross-selling__container"> 
+                        <div class="cross-selling__image js-open-popup" data-id-modal="open-modal__{{ cross_selling.id }}">
+                            <picture>
+                                <source 
+                                media="(max-width: 800px)"
+                                srcset="
+                                    {{ cross_selling.product.featured_image | image_url: width: 300 }} 1x,
+                                    {{ cross_selling.product.featured_image | image_url: width: 600 }} 2x,
+                                    ">
+                                {{ cross_selling.product.featured_image |
+                                    image_url: width: 2000 |
+                                    image_tag:
+                                        widths: '1000, 2000',
+                                        sizes: '(min-width: 1000px) 760px, (min-width: 800px) calc(100vw - 380px), (min-width: 400px) 298px, 78.75vw',
+                                        class: 'mobile-size-fix',
+                                        alt: cross_selling.product.featured_image.alt 
+                                }}
+                            </picture>
+                            <div class="cross-selling__detail-product">
+                                More detail
+                            </div>
+                        </div>
+                        <div class="cross-selling__content">
+                            <h3 class="cross-selling__title">{{ cross_selling.product.title }}</h3>
+                            <div class="cross-selling__price">
+                                <span class="sale-price">{{ cross_selling.price | money  }} USD</span> 
+                                <span class="compare-price">{{ cross_selling.compare_at_price | money  }} USD</span>
+                            </div>
+                            <div class="cross-selling__controller">
+                                <div class="radio">
+                                    <div class="radio-field js-radio">
+                                        <input type="radio" id="{{ cross_selling.id }}__yes" name="{{ cross_selling.id }}__yes" value="{{ cross_selling.id }}">
+                                        <label for="{{ cross_selling.id }}__yes">Yes</label>
+                                    </div>
+                                    <div class="radio-field js-radio">
+                                        <input type="radio" id="{{ cross_selling.id }}__no" name="{{ cross_selling.id }}__yes" value="" checked>
+                                        <label for="{{ cross_selling.id }}__no">No</label>
+                                    </div>
+                                </div>
+                                <div class="product-quantity">
+                                    <label for="{{ cross_selling.id }}__quantity">Qty:</label>
+                                    <select class="js-quantity" data-variant-id="{{ cross_selling.id }}">
+                                    {% for i in (1..100) %}
+                                        <option value="{{ i }}">{{ i }}</option>
+                                    {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    {% comment %} PREVIEW MODAL {% endcomment %}
+                    <div class="cross-selling__preview-product" data-id-modal="id-modal__{{ cross_selling.id }}">
+                        <div class="cross-selling__modal-background js-close-popup"></div>
+                        <div class="cross-selling__modal">
+                            <div class="cross-selling__modal--inner">
+                                <div class="cross-selling__modal-close js-close-popup">x</div>
+                                <div class="cross-selling__modal-wrapper">
+                                    <div class="cross-selling__modal-images">
+                                        <div class="cross-selling__modal-slider">
+                                            <div class="cross-selling__slick-wrapper">
+                                                {% for image in cross_selling.product.images limit: 1 %}
+                                                <div class="cross-selling__modal-slide">
+                                                    <picture>
+                                                        <source
+                                                        media="(max-width: 800px)"
+                                                        srcset="
+                                                            {{ image | image_url: width: 300 }} 1x,
+                                                            {{ image | image_url: width: 600 }} 2x,
+                                                            ">
+                                                        {{ image |
+                                                        image_url: width: 2000 |
+                                                        image_tag:
+                                                            widths: '1000, 2000',
+                                                            sizes: '(min-width: 1000px) 760px, (min-width: 800px) calc(100vw - 380px), (min-width: 400px) 298px, 78.75vw',
+                                                            class: 'mobile-size-fix',
+                                                            alt: image.alt }}
+                                                    </picture>
+                                                </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cross-selling__modal-content">
+                                        <h3 class="cross-selling__modal-title">{{ cross_selling.product.title }}</h3>
+                                        <div class="cross-selling__modal-price">
+                                            <span class="sale-price">{{ cross_selling.price | money  }} USD</span>
+                                            <span class="compare-price">{{ cross_selling.compare_at_price | money  }} USD</span>
+                                        </div>
+                                        <div class="cross-selling__modal-body">
+                                            <div class="cross-selling__modal-description"> 
+                                                {{ cross_selling.product.description }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</cross-selling>
+<script src="{{ 'vt__product-page--cross-selling.js' | asset_url }}" defer="defer" as="script"></script>
+{% endif %}

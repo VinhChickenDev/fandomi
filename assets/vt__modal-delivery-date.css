@@ -1,0 +1,94 @@
+.modal-shipping:not(.active) {
+    display: none;
+}
+
+.modal-shipping .icon-closed-fulfillment {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+}
+
+.modal-shipping .fulfillment_timeline {
+    flex-grow: 1;
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+}
+
+.modal-shipping .timeline-line {
+    flex-grow: 1 !important;
+}
+
+.modal-shipping .fulfillment_timeline:nth-child(2) {
+    text-align: left;
+}
+
+.modal-shipping .fulfillment_timeline:nth-child(3) {
+    text-align: center;
+}
+
+.modal-shipping .fulfillment_timeline:nth-child(4) {
+    text-align: right;
+}
+
+.modal-shipping .etsy-icon-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.modal-shipping .etsy-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    vertical-align: middle;
+    width: 24px;
+    background-color: rgb(0 0 0 / 5%);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.modal-shipping .timeline-date {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0px 5px 0px;
+}
+
+.modal-shipping .timeline-line div {
+    display: block;
+    height: 50%;
+    border-bottom: 3px solid rgba(34, 34, 34, 0.15) !important;
+}
+
+.modal-shipping .timeline-title {
+    font-size: 14px;
+}
+
+.modal-shipping .sub-des-shipping {
+    margin-top: 1.5rem;
+    padding-left: 0;
+}
+
+.modal-shipping .sub-des-shipping ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.modal-shipping .sub-des-shipping ul li {
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.modal-shipping .sub-des-shipping ul li:before {
+    content: none !important;
+}

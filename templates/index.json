@@ -6,7 +6,7 @@
         "template--21595563557153__79c934b0-e425-4618-800c-132b32e040c2-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/20240516-141909.png",
+            "image": "shopify:\/\/shop_images\/1_4.jpg",
             "link": "shopify:\/\/collections\/frontpage",
             "image_padding": false
           }
@@ -14,16 +14,16 @@
         "10b01a85-0979-4958-9bc3-6046a7ecad23": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/20240516-141914.png",
-            "link": "shopify:\/\/collections\/hawaii-shirt",
+            "image": "shopify:\/\/shop_images\/3_5.jpg",
+            "link": "shopify:\/\/collections\/featured-products",
             "image_padding": false
           }
         },
         "fd6ca51b-d4cd-468e-9bdd-498324adf318": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/20240516-141918.png",
-            "link": "shopify:\/\/collections\/fishing",
+            "image": "shopify:\/\/shop_images\/2_4.jpg",
+            "link": "shopify:\/\/collections\/featured-products",
             "image_padding": false
           }
         }
@@ -71,9 +71,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "custom_css": [
-        ".card__badge.top.left {display: none;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -81,7 +79,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "shop",
-        "products_to_show": 8,
+        "products_to_show": 16,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -98,6 +96,24 @@
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
+      }
+    },
+    "1694557154f29ae3b0": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ee6c5156-2a86-4e2a-bf30-ff11e80d6ccd": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "01825d24-01c3-47d7-ab48-87359f076d84": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
       }
     },
     "f878c67d-faf1-4c6d-9147-b67aab9e1550": {
@@ -124,7 +140,7 @@
         "featured_collection_Nqinqe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "beach-short"
+            "collection": "tumbler-20oz"
           }
         },
         "featured_collection_67cPU9": {
@@ -136,7 +152,7 @@
         "featured_collection_qzR867": {
           "type": "featured_collection",
           "settings": {
-            "collection": "cap"
+            "collection": "acrylic-hanging"
           }
         }
       },
@@ -155,7 +171,7 @@
       ],
       "settings": {
         "title": "<strong>Collection<\/strong>",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "image_ratio": "square",
         "columns_desktop": 3,
         "color_scheme": "background-1",
@@ -295,17 +311,14 @@
     },
     "153660c2-10e1-4ee7-8462-2847254592c7": {
       "type": "featured-collection",
-      "custom_css": [
-        ".card__badge.top.left {display: none;}"
-      ],
       "settings": {
         "title": "<strong>Best Seller<\/strong>",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "frontpage",
-        "products_to_show": 4,
+        "products_to_show": 8,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": true,
@@ -324,13 +337,29 @@
         "padding_bottom": 16
       }
     },
+    "collection_list_WcDawq": {
+      "type": "collection-list",
+      "disabled": true,
+      "settings": {
+        "title": "Gift For Receptions",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "f8087ddc-a18c-463a-bf7b-3ef19df473e4": {
       "type": "rich-text",
       "blocks": {
         "template--21595563557153__f8087ddc-a18c-463a-bf7b-3ef19df473e4-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>How To Make Personalized Gift<\/strong>",
+            "heading": "<strong>How To Customize Yours?<\/strong>",
             "heading_size": "h2"
           }
         },
@@ -375,9 +404,9 @@
         "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_23.31.10.png",
-            "title": "<strong>1. Pick your gift<\/strong>",
-            "text": "<p>Choose your gift you want then pick your gift size.<\/p>",
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "title": "<strong>Choose Product<\/strong>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -385,9 +414,9 @@
         "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_23.31.18.png",
-            "title": "<strong>2. Personalize your design<\/strong>",
-            "text": "<p>Customize your design with various options to best your message.<\/p>",
+            "image": "shopify:\/\/shop_images\/2_4f31babe-ec64-4a0f-97ed-c1d2af179a48.jpg",
+            "title": "<strong>Pick Your Option<\/strong>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -395,9 +424,19 @@
         "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-01-08_at_23.31.23.png",
-            "title": "<strong>3. Buy It Now<\/strong>",
-            "text": "<p>Fill your contact information and wait to enjoy meaningful gift with beloved ones.<\/p>",
+            "image": "shopify:\/\/shop_images\/3_4c1b6aee-56a8-4533-80d6-8d87af17e4de.jpg",
+            "title": "<strong>Preview Your Design<\/strong>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_L4cTFF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_49ee0ee2-bca2-4f26-bfd8-c3a62e26b0eb.jpg",
+            "title": "<strong>Place Order Now!<\/strong>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -406,50 +445,51 @@
       "block_order": [
         "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-1",
         "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-2",
-        "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-3"
+        "template--21595563557153__f0096fc3-d810-464b-a76b-34c570216ebe-column-3",
+        "column_L4cTFF"
       ],
       "custom_css": [
-        ".multicolumn.background-primary .multicolumn-card {background: #ffe9ef; margin-left: 10px; margin-right: 10px; border-radius: 24px;}",
-        ".multicolumn h3.inline-richtext {font-weight: 600; font-size: 20px; line-height: 36px; color: #b21e42;}",
+        ".multicolumn.background-primary .multicolumn-card {background: #ffe4e1; margin-left: 10px; margin-right: 10px; border-radius: 24px;}",
+        ".multicolumn h3.inline-richtext {font-weight: 600; font-size: 20px; line-height: 36px; color: #000000;}",
         ".multicolumn .rte p {font-size: 16px; line-height: 24px; color: #858585;"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "image_ratio": "square",
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
-        "color_scheme": "accent-1",
-        "columns_mobile": "1",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 28,
         "padding_bottom": 36
       }
     },
-    "rich_text_rV7ENz": {
+    "rich_text_TtabTg": {
       "type": "rich-text",
       "blocks": {
-        "heading_CYLr6j": {
+        "heading_zcWLhd": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Our Happy Customer<\/strong>",
-            "heading_size": "h1"
+            "heading": "Our Happy Customers",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "heading_CYLr6j"
+        "heading_zcWLhd"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 16,
         "padding_bottom": 0
       }
     },
@@ -460,9 +500,9 @@
           "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "maxWidth": 1150,
-            "borderRadius": 12,
-            "itemsPerView": 4,
-            "mobileItemsPerView": 1,
+            "borderRadius": 15,
+            "itemsPerView": 5,
+            "mobileItemsPerView": 2,
             "maxNumberOfCharacters": 100,
             "imageRatio": "0.72",
             "reviewerNameColor": "#000000",
@@ -492,14 +532,18 @@
     "79c934b0-e425-4618-800c-132b32e040c2",
     "855529ef-30e5-4381-85c2-86e128cc8736",
     "featured_collection",
+    "1694557154f29ae3b0",
+    "ee6c5156-2a86-4e2a-bf30-ff11e80d6ccd",
+    "01825d24-01c3-47d7-ab48-87359f076d84",
     "f878c67d-faf1-4c6d-9147-b67aab9e1550",
     "26e3e42a-61a1-4ec6-aed6-7ce746f8889b",
     "e133b97c-b7ad-4e9a-86d2-fd80f930343c",
     "rich_text_Jp9RGy",
     "153660c2-10e1-4ee7-8462-2847254592c7",
+    "collection_list_WcDawq",
     "f8087ddc-a18c-463a-bf7b-3ef19df473e4",
     "f0096fc3-d810-464b-a76b-34c570216ebe",
-    "rich_text_rV7ENz",
+    "rich_text_TtabTg",
     "171121837228f9fb24"
   ]
 }

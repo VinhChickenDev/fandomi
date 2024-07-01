@@ -132,6 +132,7 @@
               {%- if card_collection.featured_image or card_collection.description == blank -%}
                 <span class="icon-wrap">{% render 'icon-arrow' %}</span>
               {%- endif %}
+              <div class="loox-rating" data-id="{{ card_collection.id }}" data-rating="{{ card_collection.metafields.loox.avg_rating }}" data-raters="{{ card_collection.metafields.loox.num_reviews }}"></div>
             </a>
           </h3>
           {%- if card_collection.featured_image == null and card_collection.description != blank -%}
@@ -152,6 +153,7 @@
               <span class="icon-wrap">{% render 'icon-arrow' %}</span>
             </a>
           </h3>
+          <div class="loox-rating" data-id="{{ card_collection.id }}" data-rating="{{ card_collection.metafields.loox.avg_rating }}" data-raters="{{ card_collection.metafields.loox.num_reviews }}"></div>
         </div>
       </div>
     {%- endif -%}

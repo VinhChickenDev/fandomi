@@ -22,10 +22,6 @@
             "emptyRatingWidget": false
           }
         },
-        "stoked_inventory_sold_count_inventory_sold_count_Ede46h": {
-          "type": "shopify:\/\/apps\/stoked-inventory-sold-count\/blocks\/inventory-sold-count\/0339db1a-a4fc-4743-bce1-de401736e185",
-          "settings": {}
-        },
         "7302e803-49aa-4baf-8ff9-8fbb286b4739": {
           "type": "rating",
           "settings": {}
@@ -33,6 +29,22 @@
         "price": {
           "type": "price",
           "settings": {}
+        },
+        "delivery_date_Ldpayp": {
+          "type": "delivery_date",
+          "settings": {
+            "region_highlight_text": "Arrives soon! Get it by [date-time] if you order today. Free, no hassle returns & exchanges",
+            "timeline_title_1": "Order placed",
+            "timeline_title_2": "Order ships",
+            "timeline_title_3": "Delivered!",
+            "description_shipping": "<ul><li>Orders can be cancelled or modified within 2 hours after being placed.<\/li><li>Canvas\/ Poster\/ Metal Sign: These packages cannot be delivered to a PO box.<\/li><\/ul>",
+            "timeline_date_1": 8,
+            "timeline_date_2": 10,
+            "timeline_date_3": 12,
+            "timeline_date_4": 13,
+            "timeline_date_5": 17,
+            "timeline_date_6": 17
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -55,6 +67,12 @@
           "type": "shopify:\/\/apps\/vitals\/blocks\/trust\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
           "settings": {}
         },
+        "cross_selling_YybVea": {
+          "type": "cross_selling",
+          "settings": {
+            "richtext": "<h5>ADD MORE INCLUDED ACCESSORIES BELOW?<\/h5>"
+          }
+        },
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd": {
           "type": "description",
           "settings": {}
@@ -70,13 +88,14 @@
       "block_order": [
         "title",
         "loox_reviews_loox_rating_DgLQQp",
-        "stoked_inventory_sold_count_inventory_sold_count_Ede46h",
         "7302e803-49aa-4baf-8ff9-8fbb286b4739",
         "price",
+        "delivery_date_Ldpayp",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "vitals_trust_cQj4Bm",
+        "cross_selling_YybVea",
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd",
         "text_fKXYU3"
       ],

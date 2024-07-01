@@ -32,6 +32,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "vitals_trust_iJnHww": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/trust\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd": {
           "type": "description",
           "settings": {}
@@ -44,6 +48,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "vitals_trust_iJnHww",
         "c758b4ad-95ce-4a4a-bfd3-9a772c0498bd"
       ],
       "settings": {
@@ -67,7 +72,6 @@
         "slide_FzKdyH": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/White-Mug-Banner-Desktop.jpg",
             "heading": "",
             "heading_size": "h1",
             "subheading": "",
@@ -108,7 +112,6 @@
         "@media screen and (min-width: 750px) {}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/White-Mug-Banner-Desktop.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -159,7 +162,6 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/White-Mug-Secondary-Banner.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -178,7 +180,6 @@
         "column_TahYR3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/White-Mug-Uncompromising-Quality.jpg",
             "title": "<strong>Uncompromising Quality<\/strong>",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -188,7 +189,6 @@
         "column_hrngjp": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/White-Mug-Endured-Color-Quality.jpg",
             "title": "<strong>Endured Color Quality<\/strong>",
             "text": "<p>Our personalized ceramic mugs feature vibrant and long-lasting colors that make your chosen design stand out. The colors remain vivid even after multiple uses and washes. Additionally, our customized mugs feature a two-toned design that adds a touch of elegance to your drinking experience.<\/p>",
             "link_label": "",
@@ -227,7 +227,6 @@
         "column_7H6HKg": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/White-Mug-Cutting-Edge-Printing.jpg",
             "title": "<strong>Cutting-edge Printing Technology<\/strong>",
             "text": "<p>We use advanced printing techniques, such as high-resolution digital printing and sublimation printing, to achieve detailed and precise designs. These methods ensure that your personalized mug reflects the finest intricacies of your chosen artwork or message, resulting in a stunning and professional finish.<\/p>",
             "link_label": "",
@@ -237,7 +236,6 @@
         "column_3ngByx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/White-Mug-Personalize-Your-Expre.jpg",
             "title": "<strong>Personalize Your Expression of Love<\/strong>",
             "text": "<p>Our Personalized Ceramic Mugs are versatile and make excellent gifts for birthdays, anniversaries, weddings, or any special event where you want to add a personal touch. Customize your mug with a design, photo, or message that holds special meaning to you or your loved ones, and our mugs transform into personal treasures that can be used for everyday moments.<\/p>",
             "link_label": "",

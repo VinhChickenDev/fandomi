@@ -1,0 +1,158 @@
+{{ 'vt__delivery-date.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vt__delivery-date.js' | asset_url }}" defer="defer"></script>
+
+{% assign metaobject_delivery_time_product_type = shop.metaobjects.delivery_times_product_type.values %}
+{% assign product_type = product.type %}
+
+
+{% assign date_time = '<span class="date-time js-date-time" data-name=""></span>'%}
+
+{% assign from_date_standard_usa = block.settings.timeline_date_1 %}
+{% assign order_ship_standard_usa = block.settings.timeline_date_2 %}
+{% assign to_date_standard_usa = block.settings.timeline_date_3 %}
+
+{% assign from_date_standard_uk = block.settings.timeline_date_4 %}
+{% assign order_ship_standard_uk = block.settings.timeline_date_5 %}
+{% assign to_date_standard_uk = block.settings.timeline_date_6 %}
+
+{% for delivery_time in metaobject_delivery_time_product_type %}
+    {% if delivery_time.product_type == product_type %}
+        {% assign from_date_standard_usa = delivery_time.from_date_usa %}
+        {% assign order_ship_standard_usa = delivery_time.order_ship_usa %}
+        {% assign to_date_standard_usa = delivery_time.to_date_usa %}
+
+        {% assign from_date_standard_uk = delivery_time.from_date_uk %}
+        {% assign order_ship_standard_uk = delivery_time.order_ship_uk %}
+        {% assign to_date_standard_uk = delivery_time.to_date_uk %}
+    {% endif %}
+{% endfor %}
+
+<div class="vt__delivery-date">
+    <div class="deliver-to-country">
+        <span>Deliver to</span> 
+        <span class="shipping-country">
+            <select class="js-deliver-to-country"> 
+                {% if from_date_standard_uk != blank or order_ship_standard_uk or to_date_standard_uk %}
+                    <option value="USA" selected>USA</option>
+                {% endif %}
+                {% if from_date_standard_usa != blank or order_ship_standard_uk or to_date_standard_usa %}
+                    <option value="UK">International</option>
+                {% endif %}
+            </select>
+        </span>
+    </div> 
+
+    {{ block.settings.region_highlight_text | replace: "[date-time]", date_time }}
+
+    {% if product.metafields.custom.delivery_times.value != blank %}
+        {% assign indexM = 1 %}
+        {% for i in (1..2) %}
+            {% if i == 1 %}
+                {% assign data_name = 'USA'%}
+                {% assign minimum_time_standard = from_date_standard_usa %}
+                {% assign order_ship_standard = order_ship_standard_usa %}
+                {% assign maximum_time_standard = to_date_standard_usa %}
+                {% assign maximum_time_standard_last = to_date_standard_usa | plus: 3 %}
+            {% elsif i == 2 %}
+                {% assign data_name = 'UK'%}
+                {% assign minimum_time_standard = from_date_standard_uk %}
+                {% assign order_ship_standard = order_ship_standard_uk %}
+                {% assign maximum_time_standard = to_date_standard_uk %}
+                {% assign maximum_time_standard_last = to_date_standard_uk | plus: 3 %}
+            {% endif %}
+
+            {% if minimum_time_standard != blank or order_ship_standard != blank or maximum_time_standard != blank %}
+                {% render 'vt__modal-delivery-date',
+                    block: block,
+                    data_name: data_name,
+                    standard_index: forloop.index
+                %}
+                <script>
+                    document.addEventListener("DOMContentLoaded", (event) => {
+                        var fromDateStandard{{ forloop.index }} = Date.today().addDays({{ minimum_time_standard }});
+                        if (fromDateStandard{{ forloop.index }}.is().saturday() || fromDateStandard{{ forloop.index }}.is().sunday()) {
+                            fromDateStandard{{ forloop.index }} = fromDateStandard{{ forloop.index }}.next().monday();
+                        }
+                        var orderShipStandard{{ forloop.index }} = Date.today().addDays({{ order_ship_standard }});
+                        if (orderShipStandard{{ forloop.index }}.is().saturday() || orderShipStandard{{ forloop.index }}.is().sunday()) {
+                            orderShipStandard{{ forloop.index }} = orderShipStandard{{ forloop.index }}.next().monday();
+                        }                        
+                        var toDateStandard{{ forloop.index }} = Date.today().addDays({{ maximum_time_standard }});
+                        var toDateStandardLast{{ forloop.index }} = Date.today().addDays({{ maximum_time_standard_last }});
+                        if (toDateStandard{{ forloop.index }}.is().saturday() || toDateStandard{{ forloop.index }}.is().sunday()) {
+                            toDateStandard{{ forloop.index }} = toDateStandard{{ forloop.index }}.next().monday();
+                        }
+                        if(fromDateStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-current__{{forloop.index}}').textContent = fromDateStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(orderShipStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-ship__{{forloop.index}}').textContent = orderShipStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(toDateStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-delivered__{{forloop.index}}').textContent = toDateStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(toDateStandardLast{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-delivered-last__{{forloop.index}}').textContent = toDateStandardLast{{ forloop.index }}.toString('dS')
+                        }
+                    });
+                </script>
+            {% endif %}
+            {% assign indexM = indexM | plus: 1 %}
+        {% endfor %}
+    {% else %}
+        {% assign indexM = 1 %}
+        {% for i in (1..2) %}
+            {% if i == 1 %}
+                {% assign data_name = 'USA'%}
+                {% assign minimum_time_standard = from_date_standard_usa %}
+                {% assign order_ship_standard = order_ship_standard_usa %}
+                {% assign maximum_time_standard = to_date_standard_usa %}
+                {% assign maximum_time_standard_last = to_date_standard_usa | plus: 3 %}
+            {% elsif i == 2 %}
+                {% assign data_name = 'UK'%}
+                {% assign minimum_time_standard = from_date_standard_uk %}
+                {% assign order_ship_standard = order_ship_standard_uk %}
+                {% assign maximum_time_standard = to_date_standard_uk %}
+                {% assign maximum_time_standard_last = to_date_standard_uk | plus: 3 %}
+            {% endif %}
+
+            {% if minimum_time_standard != blank or order_ship_standard != blank or maximum_time_standard != blank %}
+                {% render 'vt__modal-delivery-date',
+                    block: block,
+                    data_name: data_name,
+                    standard_index: forloop.index
+                %}
+                <script>
+                    document.addEventListener("DOMContentLoaded", (event) => {
+                        var fromDateStandard{{ forloop.index }} = Date.today().addDays({{ minimum_time_standard }});
+                        if (fromDateStandard{{ forloop.index }}.is().saturday() || fromDateStandard{{ forloop.index }}.is().sunday()) {
+                            fromDateStandard{{ forloop.index }} = fromDateStandard{{ forloop.index }}.next().monday();
+                        }
+                        var orderShipStandard{{ forloop.index }} = Date.today().addDays({{ order_ship_standard }});
+                        if (orderShipStandard{{ forloop.index }}.is().saturday() || orderShipStandard{{ forloop.index }}.is().sunday()) {
+                            orderShipStandard{{ forloop.index }} = orderShipStandard{{ forloop.index }}.next().monday();
+                        }                        
+                        var toDateStandard{{ forloop.index }} = Date.today().addDays({{ maximum_time_standard }});
+                        var toDateStandardLast{{ forloop.index }} = Date.today().addDays({{ maximum_time_standard_last }});
+                        if (toDateStandard{{ forloop.index }}.is().saturday() || toDateStandard{{ forloop.index }}.is().sunday()) {
+                            toDateStandard{{ forloop.index }} = toDateStandard{{ forloop.index }}.next().monday();
+                        }
+                        if(fromDateStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-current__{{forloop.index}}').textContent = fromDateStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(orderShipStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-ship__{{forloop.index}}').textContent = orderShipStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(toDateStandard{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-delivered__{{forloop.index}}').textContent = toDateStandard{{ forloop.index }}.toString('MMMM dS')
+                        }
+                        if(toDateStandardLast{{ forloop.index }} != 'Invalid Date') {
+                            document.querySelector('.js-timeline-delivered-last__{{forloop.index}}').textContent = toDateStandardLast{{ forloop.index }}.toString('dS')
+                        }
+                    });
+                </script>
+            {% endif %}
+            {% assign indexM = indexM | plus: 1 %}
+        {% endfor %}
+    {% endif %}
+</div>

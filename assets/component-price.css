@@ -29,6 +29,7 @@
 
 .price:not(.price--show-badge) .price-item--last:last-of-type {
   margin: 0;
+  width: auto !important;
 }
 
 @media screen and (min-width: 750px) {

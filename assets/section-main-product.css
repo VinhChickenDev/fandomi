@@ -183,6 +183,7 @@ variant-selects {
 
 fieldset.product-form__input .form__label {
   margin-bottom: 0.2rem;
+  font-weight: 700 !important;
 }
 
 .product-form__input input[type='radio'] {

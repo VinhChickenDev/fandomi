@@ -376,6 +376,12 @@
   color: rgb(var(--color-foreground));
 }
 
+.card-information .price:not(.price--show-badge) .price-item--last {
+  font-size: 18px;
+  display: inline-block;
+  width: auto !important;
+}
+
 .card--horizontal .card-information > .price {
   color: rgba(var(--color-foreground), 0.75);
 }

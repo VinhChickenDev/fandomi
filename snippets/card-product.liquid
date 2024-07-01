@@ -120,7 +120,7 @@
                 {{ card_product.title | escape }} 
             </a>
             <div class='stoked-plugin-collection-container' style='display:none;'>{% render 'stoked-inventory-collection' product:card_product %}</div>
-            
+            <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -162,6 +162,7 @@
             <div class='stoked-plugin-collection-container' style='display:none;'>{% render 'stoked-inventory-collection' product:card_product %}</div>
             
           </h3>
+          <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -382,6 +383,7 @@
               {{ 'onboarding.product_title' | t }}
             </a>
           </h3>
+          <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

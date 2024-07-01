@@ -1,0 +1,66 @@
+{{ 'vt__modal-delivery-date.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vt__modal-delivery-date.js' | asset_url }}" defer="defer"></script>
+
+<div class="modal-shipping" data-name="{{ data_name }}">
+    <div class="wt-grid fulfillment box-hover-shipping">
+    <div class="icon-closed-fulfillment hidden-xl">x</div>
+    <div class="fulfillment_timeline">
+        <div class="fulfillment_timeline-wrap">
+        <div class="etsy-icon-wrap">
+            <div>
+            <span class="etsy-icon" style="padding:3px">
+                <img loading="eager" height="18" width="100%" class="img-shipping-country" src="https://cdn.shopify.com/s/files/1/0631/4822/8763/files/waving_hand_48dp_FILL0_wght300_GRAD0_opsz48.png?v=1717122851" alt="shipping place">
+            </span>
+            </div>
+            <div class="timeline-line pl-6">
+            <div class=""></div>
+            </div>
+        </div>
+        <p class="timeline-date timeline-current js-timeline-current__{{ standard_index }}">{{ block.settings.timeline_date_1 }}</p>
+        <span class="timeline-title"> <span>{{ block.settings.timeline_title_1 }}</span></span>
+        </div>
+    </div>
+    <div class="fulfillment_timeline">
+        <div class="fulfillment_timeline-wrap">
+        <div class="etsy-icon-wrap">
+            <div class="timeline-line pr-6">
+            <div class=""></div>
+            </div>
+            <div>
+            <span class="etsy-icon" style="padding:3px">
+                <img loading="eager" height="18" width="100%" class="img-shipping-country" src="https://cdn.shopify.com/s/files/1/0631/4822/8763/files/local_shipping_48dp_FILL0_wght300_GRAD0_opsz48.png?v=1717122834" alt="shippment">
+            </span>
+            </div>
+            <div class="timeline-line pl-6">
+            <div class=""></div>
+            </div>
+        </div>
+        <p class="timeline-date timeline-ship js-timeline-ship__{{ standard_index }}">{{ block.settings.timeline_date_2 }}</p>
+        <span class="timeline-title"> <span>{{ block.settings.timeline_title_2 }}</span></span>
+        </div>
+    </div>
+    <div class="fulfillment_timeline">
+        <div class="fulfillment_timeline-wrap">
+        <div class="etsy-icon-wrap">
+            <div class="timeline-line pr-6">
+            <div class=""></div>
+            </div>
+            <div>
+            <span class="etsy-icon" style="padding:3px">
+                <img loading="eager" height="18" width="100%" class="img-shipping-country" src="https://cdn.shopify.com/s/files/1/0631/4822/8763/files/featured_seasonal_and_gifts_48dp_FILL0_wght300_GRAD0_opsz48.png?v=1717122823" alt="shippment delivered">
+            </span>
+            </div>
+        </div>
+        <p class="timeline-date timeline-delivered">
+            <span class="js-timeline-delivered__{{ standard_index }}">{{ block.settings.timeline_date_3 }}</span>
+            -
+            <span class="js-timeline-delivered-last__{{ standard_index }}">{{ block.settings.timeline_date_3 | plus: 3 }}</span>
+        </p>
+        <span class="timeline-title"> <span>{{ block.settings.timeline_title_3 }}</span></span>
+        </div>
+    </div>
+    <div class="sub-des-shipping">
+        {{ block.settings.description_shipping }}
+    </div>
+    </div>
+</div>

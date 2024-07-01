@@ -58,7 +58,7 @@ src="https://www.facebook.com/tr?id=928849355263541&ev=PageView&noscript=1"
     {% endif %}
 
     {% render 'meta-tags' %}
-
+    <script src="{{ 'jquery.min.js' | asset_url }}" defer"></script>
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
@@ -375,7 +375,7 @@ src="https://www.facebook.com/tr?id=928849355263541&ev=PageView&noscript=1"
     {% comment %}
   ADDED BY CUSTOMILY
 {% endcomment %}
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 {% if template contains "product" %}
   <script src="https://cdn.customily.com/customily.js"></script>
   <script src="https://cdn.customily.com/shopify/static/customily.shopify.script.unified.js"></script>

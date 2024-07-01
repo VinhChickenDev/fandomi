@@ -15,6 +15,7 @@
   {%- endif -%}
   {{ 'personlize.css' | asset_url | stylesheet_tag }}
 
+  {{ '//cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js' | script_tag }}
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -110,7 +111,7 @@
                 {%- render 'price',
                   product: product,
                   use_variant: true,
-                  show_badges: true,
+                  show_badges: false,
                   price_class: 'price--large'
                 -%}
               </div>
@@ -437,6 +438,10 @@
 
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+            {%- when 'delivery_date' -%}
+              {% render 'vt__delivery-date', product: product, block: block, product_form_id: product_form_id %}
+            {%- when 'cross_selling' -%}
+                {% render 'vt__product-page--cross-selling', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'rating' -%}
@@ -845,6 +850,134 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        }
+      ]
+    },
+    {
+      "type": "delivery_date",
+      "name": "Delivery date",
+      "limit": 1,
+      "settings": [
+        {
+            "type": "header",
+            "content": "List region highlight"
+        },
+        {
+            "type": "liquid",
+            "id": "region_highlight_text",
+            "label": "Text",
+            "default": "<ul><li>Arrives soon! Get it by [date-time] if you order today.</li><li>Free, no hassle returns & exchanges</li></ul>"
+        },
+        {
+            "type": "header",
+            "content": "Modal shipping [Standard Shipping]"
+        },
+        {
+            "type": "paragraph",
+            "content": "Settings for all products"
+        },
+        {
+            "type": "text",
+            "id": "timeline_title_1",
+            "label": "Timeline title",
+            "default": "Order placed"
+        },
+        {
+            "type": "text",
+            "id": "timeline_title_2",
+            "label": "Timeline title",
+            "default": "Order ships"
+        },
+        {
+            "type": "text",
+            "id": "timeline_title_3",
+            "label": "Timeline title",
+            "default": "Delivered!"
+        },
+        {
+            "type": "richtext", 
+            "id": "description_shipping",
+            "label": "Description shipping"
+        },
+        {
+            "type": "header",
+            "content": "Delivery Standard USA"
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_1",
+            "label": "From date [USA]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_2",
+            "label": "Order ship [USA]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_3",
+            "label": "To date [USA]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        },
+        {
+            "type": "header",
+            "content": "Delivery Standard UK"
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_4",
+            "label": "From date [UK]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_5",
+            "label": "Order ship [UK]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        },
+        {
+            "type": "range",
+            "id": "timeline_date_6",
+            "label": "To date [UK]",
+            "unit": "D",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "default": 6
+        }
+      ]
+    },
+    {
+      "type": "cross_selling",
+      "name": "Cross-selling",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "richtext",
+          "label": "Cross-selling heading",
+          "default": "<h5>ADD MORE INCLUDED ACCESSORIES BELOW?</h5>"
         }
       ]
     },
